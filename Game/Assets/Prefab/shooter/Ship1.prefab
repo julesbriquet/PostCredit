@@ -31,6 +31,7 @@ GameObject:
   - 61: {fileID: 6137792}
   - 50: {fileID: 5037792}
   - 114: {fileID: 11437792}
+  - 114: {fileID: 11497368}
   m_Layer: 0
   m_Name: HitPoint1
   m_TagString: HitPoint
@@ -127,6 +128,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPointNumber: 1
+  gun: []
+  gunIndex: 0
+  secondsBetweenShoots: 2
+  secondsBeforeSwitchGun: 2
 --- !u!114 &11437792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,6 +144,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipOwner: {fileID: 0}
+--- !u!114 &11497368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bf002a33897684ba16b693ef6258fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootObject: {fileID: 112406, guid: ea79c2919b5b57d439c99559e6b6b43e, type: 2}
+  typeOfGun: 0
+  roundPerMinute: 1000
+  hasTriggerBeenRelease: 1
+  shootLifeTime: 3
+  shootSpeed: -15
 --- !u!212 &21237790
 SpriteRenderer:
   m_ObjectHideFlags: 1

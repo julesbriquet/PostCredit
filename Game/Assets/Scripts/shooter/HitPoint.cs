@@ -13,5 +13,6 @@ public class HitPoint : MonoBehaviour {
     void OnDestroy()
     {
         shipOwner.hitPointNumber--;
+        shipOwner.gun.Remove(this.GetComponent<GunEntity>());
     }
 }

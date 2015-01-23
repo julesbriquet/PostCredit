@@ -32,10 +32,19 @@ public class ShootEntity : MonoBehaviour
         }
         if (other.tag == "Asteroid")*/
 
-        if (other.tag == "HitPoint")
+        PlayerShip player = other.GetComponent<PlayerShip>();
+
+        if (playerOrigin > 0)
         {
-            Destroy(other.gameObject);
+            if (other.tag == "HitPoint")
+                Destroy(other.gameObject);
+
+            if (player == null)
+                Destroy(gameObject);
         }
-        Destroy(gameObject);
+        else if (player)
+        {
+            Destroy(gameObject);
+        }
     }
 }

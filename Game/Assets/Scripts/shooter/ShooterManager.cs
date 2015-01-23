@@ -4,19 +4,12 @@ using System.Collections;
 public class ShooterManager : MonoBehaviour {
 
     public EnnemyEntity[] ennemyList;
+    public Transform SpawnPoint;
 
 	// Use this for initialization
 	void Start () {
-        if (GameManager.Instance.LevelDifficulty == 1)
-        {
-        }
-        else if (GameManager.Instance.LevelDifficulty == 2)
-        {
-        }
-        else if (GameManager.Instance.LevelDifficulty == 3)
-        {
-        }
-
+        
+        Instantiate(ennemyList[GameManager.Instance.LevelDifficulty - 1], SpawnPoint.position, Quaternion.identity);
 	}
 	
 	// Update is called once per frame
