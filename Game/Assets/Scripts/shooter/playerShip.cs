@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[System.Serializable]
+
 public class PlayerShip : MonoBehaviour {
 
     public int playerNumber = 1;
