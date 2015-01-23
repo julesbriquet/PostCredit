@@ -60,6 +60,8 @@ public class RpgManager : MonoBehaviour {
 				break;
 			}
 		}
+
+
 	}
 
 	// Update is called once per frame
@@ -69,6 +71,8 @@ public class RpgManager : MonoBehaviour {
 
 	public void PressSelection(int choose)
 	{
-		Debug.Log(buttonSelection[choose].ToString());
+		switch(buttonSelection[choose])
+		{
+		}
 	}
 }
