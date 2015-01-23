@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class RpgManager : MonoBehaviour {
 
-	RpgAction[] buttonSelection;
+	RpgAction[] buttonRpgActions;
 
 	public Button[] SelectionButtons;
 
@@ -14,7 +14,7 @@ public class RpgManager : MonoBehaviour {
 	{
 		List<int> randoms = new List<int>(new int[]{0,1,2,3});
 		List<int> selections = new List<int>();
-		this.buttonSelection = new RpgAction[4];
+		this.buttonRpgActions = new RpgAction[4];
 
 		for(int i = 0; i < 4; i++)
 		{
@@ -28,23 +28,23 @@ public class RpgManager : MonoBehaviour {
 			switch(selections[i])
 			{
 			case 0:
-				this.buttonSelection[i] = RpgAction.escape;
+				this.buttonRpgActions[i] = RpgAction.escape;
 				break;
 			case 1:
-				this.buttonSelection[i] = RpgAction.wait;
+				this.buttonRpgActions[i] = RpgAction.wait;
 				break;
 			case 2:
-				this.buttonSelection[i] = RpgAction.super;
+				this.buttonRpgActions[i] = RpgAction.super;
 				break;
 			case 3:
-				this.buttonSelection[i] = RpgAction.loose;
+				this.buttonRpgActions[i] = RpgAction.loose;
 				break;
 			}
 		}
 
 		for(int i = 0 ; i < 4 ; i++)
 		{
-			switch(this.buttonSelection[i])
+			switch(this.buttonRpgActions[i])
 			{
 			case RpgAction.escape:
 				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Escape";
@@ -61,7 +61,7 @@ public class RpgManager : MonoBehaviour {
 			}
 		}
 
-
+	
 	}
 
 	// Update is called once per frame
@@ -71,8 +71,13 @@ public class RpgManager : MonoBehaviour {
 
 	public void PressSelection(int choose)
 	{
-		switch(buttonSelection[choose])
+		if(this.buttonRpgActions[choose] == RpgAction.super)
 		{
+			Debug.Log("WIN");
+		}
+		else
+		{
+			Debug.Log("LOOSE");
 		}
 	}
 }
