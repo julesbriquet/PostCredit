@@ -1,0 +1,12 @@
+Game/Library
+Game/Temp
+*.userprefs
+*.suo
+*.sln
+*.csproj
+*.db
+*.db.meta
+*.unityproj
+Game/Web
+Game/obj
+Game/Assembly-UnityScript-Editor-vs.unityproj
