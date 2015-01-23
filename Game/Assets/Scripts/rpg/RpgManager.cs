@@ -73,11 +73,11 @@ public class RpgManager : MonoBehaviour {
 	{
 		if(this.buttonRpgActions[choose] == RpgAction.super)
 		{
-			Debug.Log("WIN");
+			GameManager.Instance.LevelEnd(true);
 		}
 		else
 		{
-			Debug.Log("LOOSE");
+			GameManager.Instance.LevelEnd(false);
 		}
 	}
 }

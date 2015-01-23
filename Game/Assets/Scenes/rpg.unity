@@ -335,6 +335,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameSpeed: 1
   LevelDifficulty: 1
+  NumberOfPlayer: 1
+  BasePlayerLife: 3
 --- !u!4 &861986138
 Transform:
   m_ObjectHideFlags: 0

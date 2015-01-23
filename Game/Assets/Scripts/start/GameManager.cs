@@ -8,8 +8,12 @@ public class GameManager : MonoBehaviour {
 
 	public float GameSpeed;
 	public int LevelDifficulty;
+	public Player ActivePlayer;
+	public int NumberOfPlayer = 1;
+	public int BasePlayerLife = 3;
 
-	string[] levelNames  = {"shoot","rpg","jump"};
+	Player[] Players;
+	string[] levelNames  = {"shooter","rpg","jump"};
 	List<string> levelSelections;
 
 	void Awake ()
@@ -17,6 +21,7 @@ public class GameManager : MonoBehaviour {
 		if(null == GameManager.Instance)
 		{
 			GameObject.DontDestroyOnLoad(this);
+			SetUp();
 			GameManager.Instance = this;
 		}
 		else if(this != GameManager.Instance)
@@ -32,13 +37,26 @@ public class GameManager : MonoBehaviour {
 
 	public void StartGame ()
 	{
-		this.levelSelections = new List<string>(this.levelNames);
-		this.LevelDifficulty = 1;
-
 		LoadLevel();
 	}
 
-	public void LoadLevel ()
+	void SetUp()
+	{
+		this.levelSelections = new List<string>(this.levelNames);
+		this.LevelDifficulty = 1;
+
+		this.Players = new Player[this.NumberOfPlayer];
+		for(int i = 0; i < this.Players.Length; i++)
+		{
+			this.Players[i] = new Player();
+			this.Players[i].Id = i+1;
+			this.Players[i].Life = this.BasePlayerLife;
+		}
+		
+		this.ActivePlayer = this.Players[0];
+	}
+
+	void LoadLevel ()
 	{
 		if(this.levelSelections.Count == 0)
 		{
@@ -51,5 +69,11 @@ public class GameManager : MonoBehaviour {
 		this.levelSelections.RemoveAt(rand);
 
 		Application.LoadLevel(levelName);
+	}
+
+	public void LevelEnd(bool win)
+	{
+		Debug.Log ("Player " + this.ActivePlayer.Id + " win = " + win);
+		LoadLevel();
 	}
 }
