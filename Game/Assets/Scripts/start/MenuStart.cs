@@ -17,4 +17,9 @@ public class MenuStart : MonoBehaviour {
 	{
 		GameManager.Instance.StartGame();
 	}
+
+	public void PressQuit ()
+	{
+		Application.Quit();
+	}
 }
