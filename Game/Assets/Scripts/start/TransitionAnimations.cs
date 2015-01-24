@@ -15,7 +15,7 @@ public class TransitionAnimations : MonoBehaviour {
 
     private RectTransform screenRect;
 
-    void Start()
+    void Awake()
     {
 
         screenRect = this.GetComponent<RectTransform>();
@@ -68,6 +68,7 @@ public class TransitionAnimations : MonoBehaviour {
 
     IEnumerator StartLevelAnimation()
     {
+        yield return new WaitForSeconds(0.3f);
         while (leftEndGameBackground.rectTransform.anchoredPosition.x > -(screenRect.rect.width / 2) || rightEndGameBackground.rectTransform.anchoredPosition.x < screenRect.rect.width / 2)
         {
             leftEndGameBackground.rectTransform.anchoredPosition -= new Vector2(speed, 0);
@@ -76,7 +77,6 @@ public class TransitionAnimations : MonoBehaviour {
         }
 
         isAnimationFinished = true;
-        GameManager.Instance.ClapEnd();
     }
 
 
