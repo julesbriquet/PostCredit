@@ -19,6 +19,10 @@ public class FinishHimManager : MonoBehaviour {
 
     public CommandUICreator uiCreator;
 
+
+    public float[] timerForDifficulty;
+    public float timeUntilEndGame;
+
     void Awake()
     {
         if (null == FinishHimManager.Instance)
@@ -48,11 +52,16 @@ public class FinishHimManager : MonoBehaviour {
         }
 
         uiCreator.GenerateUICommand(commandToDo);
+
+        timeUntilEndGame = timerForDifficulty[GameManager.Instance.LevelDifficulty - 1];
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        timeUntilEndGame -= Time.deltaTime;
 
+        if (timeUntilEndGame <= 0)
+            GameManager.Instance.LevelEnd(false);
 	}
 
 

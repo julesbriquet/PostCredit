@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameSpeed: 0
-  LevelDifficulty: 2
+  LevelDifficulty: 3
   NumberOfPlayer: 1
   BasePlayerLife: 3
   LastLevelWin: 0

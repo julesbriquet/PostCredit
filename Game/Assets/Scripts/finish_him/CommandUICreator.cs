@@ -17,7 +17,7 @@ public class CommandUICreator : MonoBehaviour {
     {
 
         int imageWidth = (int)upImage.rectTransform.rect.width;
-        Debug.Log(imageWidth);
+        //Debug.Log(imageWidth);
 
         int startPosition = -(imageWidth / 2) * (commandList.Length - 1);
         int currentPosition = startPosition;
@@ -27,7 +27,7 @@ public class CommandUICreator : MonoBehaviour {
         for (int i = 0; i < commandList.Length; i++)
         {
             Image instanciateImg = null;
-            Debug.Log(commandList);
+            //Debug.Log(commandList);
 
             if (commandList[i] == 'U')
                 instanciateImg = Instantiate(upImage, new Vector3(currentPosition, 0, 0), Quaternion.identity) as Image;
@@ -43,7 +43,7 @@ public class CommandUICreator : MonoBehaviour {
 
             if (instanciateImg != null)
             {
-                Debug.Log(currentPosition);
+                //Debug.Log(currentPosition);
                 instanciateImg.rectTransform.SetParent(this.transform, false);
 
                 imageCommandList.Add(instanciateImg);
