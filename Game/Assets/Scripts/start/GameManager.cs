@@ -148,7 +148,11 @@ public class GameManager : MonoBehaviour {
 
     void OnLevelWasLoaded(int level)
     {
-        animationUI = GameObject.FindGameObjectWithTag("TransitionAnimator").GetComponent<TransitionAnimations>();
-        animationUI.LaunchStartGameAnimation();
+        GameObject animationTmp = GameObject.FindGameObjectWithTag("TransitionAnimator");
+        if (animationTmp)
+        {
+            animationUI = animationTmp.GetComponent<TransitionAnimations>();
+            animationUI.LaunchStartGameAnimation();
+        }
     }
 }
