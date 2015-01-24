@@ -42,7 +42,7 @@ public class LobbyManager : MonoBehaviour
 		}
 		else
 		{
-			this.MainText.text = "You loose";
+			this.MainText.text = "You lose";
 		}
 
 		yield return new WaitForSeconds(2f);
@@ -75,7 +75,7 @@ public class LobbyManager : MonoBehaviour
 
 				this.MainText.text = "Be ready for the next level";
 				this.Character.StartMove();
-				yield return new WaitForSeconds(2.2f);
+				yield return new WaitForSeconds(2.6f);
 
 				GameManager.Instance.LoadLevel();
 			}
