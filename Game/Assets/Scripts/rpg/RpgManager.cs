@@ -16,6 +16,10 @@ public class RpgManager : MonoBehaviour {
 
 	public Button[] SelectionButtons3;
 
+	public float[] TimerForDifficulty;
+	float timeUntilEndGame;
+
+
 	public GameObject Pannel2;
 	public GameObject Pannel3;
 	// Use this for initialization
@@ -73,12 +77,20 @@ public class RpgManager : MonoBehaviour {
 			}
 		}
 
-	
+		int difficulty = GameManager.Instance.LevelDifficulty;
+		difficulty--;
+		difficulty = Mathf.Clamp(difficulty,0,3);
+
+		this.timeUntilEndGame = Time.time + this.TimerForDifficulty[difficulty];
 	}
 
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
+		if(Time.time > this.timeUntilEndGame)
+		{
+			GameManager.Instance.LevelEnd(false);
+		}
 	}
 
 	public void PressSelection(int choose)
