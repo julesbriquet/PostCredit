@@ -337,6 +337,7 @@ MonoBehaviour:
   LevelDifficulty: 1
   NumberOfPlayer: 1
   BasePlayerLife: 3
+  LastLevelWin: 0
 --- !u!4 &861986138
 Transform:
   m_ObjectHideFlags: 0
