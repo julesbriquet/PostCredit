@@ -58,6 +58,7 @@ public class FinishHimManager : MonoBehaviour {
         uiCreator.GenerateUICommand(commandToDo);
 
         timeUntilEndGame = timerForDifficulty[GameManager.Instance.LevelDifficulty - 1];
+		TimerManager.Instance.StartTimer( timerForDifficulty[GameManager.Instance.LevelDifficulty - 1] );
 	}
 	
 	// Update is called once per frame
