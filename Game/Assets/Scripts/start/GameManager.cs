@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	public bool LastLevelWin = false;
 
 	Player[] Players;
-	string[] levelNames  = {"shooter","rpg","jump"};
+	string[] levelNames  = {"shooter","rpg"};
 	List<string> levelSelections;
 
 	void Awake ()
@@ -44,7 +44,11 @@ public class GameManager : MonoBehaviour {
 	void SetUp()
 	{
 		this.levelSelections = new List<string>(this.levelNames);
-		this.LevelDifficulty = 1;
+
+		if( 0 == this.LevelDifficulty )
+		{
+			this.LevelDifficulty = 1;
+		}
 
 		this.Players = new Player[this.NumberOfPlayer];
 		for(int i = 0; i < this.Players.Length; i++)
