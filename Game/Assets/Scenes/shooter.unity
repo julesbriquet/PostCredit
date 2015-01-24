@@ -414,6 +414,11 @@ MonoBehaviour:
   - {fileID: 11462208, guid: f2194327265caa94b946e519d6169b5e, type: 2}
   - {fileID: 11462208, guid: f2194327265caa94b946e519d6169b5e, type: 2}
   SpawnPoint: {fileID: 513192686}
+  timerForDifficulty:
+  - 5
+  - 5
+  - 5
+  timeUntilEndGame: 0
 --- !u!1 &1845242218
 GameObject:
   m_ObjectHideFlags: 0
