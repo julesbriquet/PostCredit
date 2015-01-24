@@ -4,9 +4,14 @@ using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviour 
 {
+	public LobbyHeart Hearts;
+	public LobbyCharacter Character;
+
 	public Text MainText;
 	public void Start ()
 	{
+		this.Hearts.SetUp(GameManager.Instance.ActivePlayer.Life);
+
 		if(GameManager.Instance.NumberOfPlayer > 1)
 		{
 			StartCoroutine("PlayEndMulti");
@@ -44,8 +49,9 @@ public class LobbyManager : MonoBehaviour
 
 		if(!win)
 		{
-			this.MainText.text = "You loose one life";
+			this.MainText.text = "You lose one life";
 			activePlayer.Life--;
+			this.Hearts.LoseLife(activePlayer.Life);
 			yield return new WaitForSeconds(1f);
 		}
 
@@ -68,8 +74,8 @@ public class LobbyManager : MonoBehaviour
 				}
 
 				this.MainText.text = "Be ready for the next level";
-				
-				yield return new WaitForSeconds(1f);
+				this.Character.StartMove();
+				yield return new WaitForSeconds(2.2f);
 
 				GameManager.Instance.LoadLevel();
 			}
