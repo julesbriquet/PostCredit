@@ -18,6 +18,7 @@ public class EnnemyEntity : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gun = new List<GunEntity>(this.GetComponentsInChildren<GunEntity>());
+        nextPossibleShoot = 1.3f + Time.time;
 	}
 	
 	// Update is called once per frame
