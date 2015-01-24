@@ -24,6 +24,13 @@ public class LobbyManager : MonoBehaviour
 		bool stillLevel = GameManager.Instance.StillLevel();
 		bool nextDifficulty = GameManager.Instance.NextDifficulty();
 
+		string nextLevel = string.Empty;
+
+		if(stillLevel)
+		{
+			nextLevel = GameManager.Instance.FindNextLevel();
+		}
+
 		if(win)
 		{
 			this.MainText.text = "You win";
@@ -63,7 +70,7 @@ public class LobbyManager : MonoBehaviour
 				this.MainText.text = "Be ready for the next level";
 				
 				yield return new WaitForSeconds(1f);
-				
+
 				GameManager.Instance.LoadLevel();
 			}
 			else
@@ -111,7 +118,8 @@ public class LobbyManager : MonoBehaviour
 			}
 			
 			this.MainText.text = string.Format("Be ready for the next level");			
-			yield return new WaitForSeconds(1f);			
+			yield return new WaitForSeconds(1f);
+			GameManager.Instance.FindNextLevel();
 			GameManager.Instance.LoadLevel();
 		}
 		else
