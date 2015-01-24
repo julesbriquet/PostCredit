@@ -1231,7 +1231,7 @@ MonoBehaviour:
   NumberOfPlayer: 1
   BasePlayerLife: 3
   LastLevelWin: 0
-  animationUI: {fileID: 0}
+  animationUI: {fileID: 367989938}
 --- !u!4 &861986138
 Transform:
   m_ObjectHideFlags: 0
