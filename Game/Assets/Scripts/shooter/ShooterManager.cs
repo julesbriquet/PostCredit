@@ -7,7 +7,7 @@ public class ShooterManager : MonoBehaviour {
     public Transform SpawnPoint;
 
     public float[] timerForDifficulty;
-    private float timeUntilEndGame;
+    public float timeUntilEndGame;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +20,7 @@ public class ShooterManager : MonoBehaviour {
 	void Update () {
         timeUntilEndGame -= Time.deltaTime;
 
-        if (timeUntilEndGame == 0)
+        if (timeUntilEndGame <= 0)
             GameManager.Instance.LevelEnd(false);
 	}
 }
