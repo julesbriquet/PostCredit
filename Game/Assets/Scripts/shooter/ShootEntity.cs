@@ -44,7 +44,7 @@ public class ShootEntity : MonoBehaviour
         }
         else if (player)
         {
-            Destroy(gameObject);
+            GameManager.Instance.LevelEnd(false);
         }
     }
 }

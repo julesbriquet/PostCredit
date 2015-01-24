@@ -103,6 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameSpeed: 0
   LevelDifficulty: 3
+  NumberOfPlayer: 1
+  BasePlayerLife: 3
 --- !u!4 &181611977
 Transform:
   m_ObjectHideFlags: 0
@@ -126,6 +128,7 @@ GameObject:
   - 212: {fileID: 447537281}
   - 114: {fileID: 447537280}
   - 50: {fileID: 447537279}
+  - 61: {fileID: 447537283}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -198,6 +201,17 @@ Transform:
   - {fileID: 1761734960}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!61 &447537283
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447537278}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 4.28999949, y: 2.81999993}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &513192685
 GameObject:
   m_ObjectHideFlags: 0

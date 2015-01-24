@@ -10,7 +10,7 @@ public class EnnemyEntity : MonoBehaviour {
     public int gunIndex = 0;
 
     public float secondsBetweenShoots = 0.5f;
-    private float nextPossibleShoot = 0f;
+    private float nextPossibleShoot = 1.3f;
 
     public float secondsBeforeSwitchGun = 1f;
     private float nextSwitchGunTime = 0f;
@@ -49,7 +49,7 @@ public class EnnemyEntity : MonoBehaviour {
 
         // WIN GAME
         if (hitPointNumber == 0)
-            Debug.Log("WIN");
+            GameManager.Instance.LevelEnd(true);
         
 	}
 }
