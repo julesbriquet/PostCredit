@@ -1857,18 +1857,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54c2cf446683b444bb446427b7ebf80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed:
-  - 2
-  - 1
-  - 1
-  JumpForce:
-  - 10
-  - 2
-  - 2
-  Gravity:
-  - -40
-  - -15
-  - -15
+  MoveSpeed: 3
+  JumpForce: 12
+  Gravity: -40
 --- !u!4 &1115525466
 Transform:
   m_ObjectHideFlags: 0
