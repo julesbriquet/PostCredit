@@ -11,7 +11,7 @@ public class TransitionAnimations : MonoBehaviour {
 
     public float speed;
 
-    private bool isAnimationFinished;
+    public bool isAnimationFinished;
 
     private RectTransform screenRect;
 
@@ -29,6 +29,8 @@ public class TransitionAnimations : MonoBehaviour {
 
     public void LaunchStartGameAnimation()
     {
+        isAnimationFinished = false;
+
         leftEndGameBackground.rectTransform.localScale = new Vector3(screenRect.rect.width, screenRect.rect.height, 0);
         rightEndGameBackground.rectTransform.localScale = new Vector3(screenRect.rect.width, screenRect.rect.height, 0);
 
@@ -40,6 +42,8 @@ public class TransitionAnimations : MonoBehaviour {
 
     public void LaunchEndGameAnimation()
     {
+        isAnimationFinished = false;
+
         leftEndGameBackground.rectTransform.localScale = new Vector3(screenRect.rect.width, screenRect.rect.height, 0);
         rightEndGameBackground.rectTransform.localScale = new Vector3(screenRect.rect.width, screenRect.rect.height, 0);
 
@@ -51,7 +55,6 @@ public class TransitionAnimations : MonoBehaviour {
 
     IEnumerator EndLevelAnimation()
     {
-        yield return new WaitForSeconds(1);
         while (leftEndGameBackground.rectTransform.anchoredPosition.x < 0 || rightEndGameBackground.rectTransform.anchoredPosition.x > 0)
         {
             leftEndGameBackground.rectTransform.anchoredPosition += new Vector2(speed, 0);
@@ -60,12 +63,11 @@ public class TransitionAnimations : MonoBehaviour {
         }
 
         isAnimationFinished = true;
+        GameManager.Instance.ClapEnd();
     }
 
     IEnumerator StartLevelAnimation()
     {
-
-        yield return new WaitForSeconds(1);
         while (leftEndGameBackground.rectTransform.anchoredPosition.x > -(screenRect.rect.width / 2) || rightEndGameBackground.rectTransform.anchoredPosition.x < screenRect.rect.width / 2)
         {
             leftEndGameBackground.rectTransform.anchoredPosition -= new Vector2(speed, 0);
@@ -74,6 +76,7 @@ public class TransitionAnimations : MonoBehaviour {
         }
 
         isAnimationFinished = true;
+        GameManager.Instance.ClapEnd();
     }
 
 

@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour {
 	List<string> levelSelections;
 	string nextLevel;
 
+    public TransitionAnimations animationUI;
+
 	void Awake ()
 	{
 		if(null == GameManager.Instance)
@@ -96,9 +98,14 @@ public class GameManager : MonoBehaviour {
 
 	public void LevelEnd(bool win)
 	{
-		this.LastLevelWin = win;
-		Application.LoadLevel("lobby");
+        this.LastLevelWin = win;
+        animationUI.LaunchEndGameAnimation();
 	}
+
+    public void ClapEnd()
+    {
+        Application.LoadLevel("lobby");
+    }
 
 	public bool StillLevel ()
 	{
@@ -136,4 +143,9 @@ public class GameManager : MonoBehaviour {
 
 		throw new System.Exception("All Player Dead Exception");
 	}
+
+    void OnLevelWasLoaded(int level)
+    {
+        animationUI = GameObject.FindGameObjectWithTag("TransitionAnimator").GetComponent<TransitionAnimations>();
+    }
 }
