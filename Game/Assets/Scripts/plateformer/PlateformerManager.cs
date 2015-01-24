@@ -20,7 +20,6 @@ public class PlateformerManager : MonoBehaviour {
 	void Start () 
 	{
 		this.timeUntilEndGame = Time.time + TimerForDifficulty;
-		Physics2D.gravity = new Vector2(0f, this.Gravity);
 	}
 	
 	// Update is called once per frame
@@ -37,6 +36,11 @@ public class PlateformerManager : MonoBehaviour {
 				GameManager.Instance.LevelEnd(false);
 			}
 		}
+	}
+
+	void FixedUpdate ()
+	{
+		Physics2D.gravity = new Vector2(0f, this.Gravity);
 	}
 
 	public float GetJumpForce ()
