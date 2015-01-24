@@ -105,6 +105,7 @@ MonoBehaviour:
   LevelDifficulty: 3
   NumberOfPlayer: 1
   BasePlayerLife: 3
+  LastLevelWin: 0
 --- !u!4 &181611977
 Transform:
   m_ObjectHideFlags: 0
@@ -159,7 +160,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 447537278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 561ff0399052b3244a26ff7d13ef5610, type: 3}
+  m_Script: {fileID: 11500000, guid: de8159f3eef540642b0cd4f2dcc5d13f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerNumber: 1

@@ -2,7 +2,8 @@
 using System.Collections;
 
 
-public class PlayerShip : MonoBehaviour {
+public class PlayerShip : MonoBehaviour
+{
 
     public int playerNumber = 1;
     private string InputPlayerString = "";
@@ -17,13 +18,15 @@ public class PlayerShip : MonoBehaviour {
 
     public GunEntity gun;
 
-	// Use this for initialization
-	void Start () {
-        Time.timeScale = 1.3f;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
+        //Time.timeScale = 1.3f;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         /*
          *  HANDLING MULTIPLAYER
@@ -60,7 +63,7 @@ public class PlayerShip : MonoBehaviour {
             gun.Shoot(playerNumber);
         }
 
-	}
+    }
 
 
     // AVOID GOING OFF SCREEN
