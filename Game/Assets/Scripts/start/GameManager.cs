@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	public bool LastLevelWin = false;
 
 	Player[] Players;
-	string[] levelNames  = {"shooter","rpg"};
+	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin"};
 	List<string> levelSelections;
 
 	void Awake ()
@@ -72,6 +72,14 @@ public class GameManager : MonoBehaviour {
 		int rand = Random.Range(0,this.levelSelections.Count);
 		string levelName = this.levelSelections[rand];
 		this.levelSelections.RemoveAt(rand);
+
+		if(levelName == "coin" || levelName == "plateformer" || levelName == "jumper")
+		{
+			int levelIndex = Mathf.Clamp(this.LevelDifficulty,1,3);
+			levelName = levelName + "_" + levelIndex;
+		}
+
+		Debug.Log("Load level " + levelName);
 
 		Application.LoadLevel(levelName);
 	}
