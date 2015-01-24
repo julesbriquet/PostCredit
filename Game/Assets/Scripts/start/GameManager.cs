@@ -101,7 +101,8 @@ public class GameManager : MonoBehaviour {
 	public void LevelEnd(bool win)
 	{
         this.LastLevelWin = win;
-        animationUI.LaunchEndGameAnimation();
+        if (animationUI)
+            animationUI.LaunchEndGameAnimation();
 	}
 
     public void ClapEnd()
