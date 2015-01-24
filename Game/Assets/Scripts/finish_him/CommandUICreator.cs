@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 public class CommandUICreator : MonoBehaviour {
 
     public Image upImage;
@@ -9,6 +10,8 @@ public class CommandUICreator : MonoBehaviour {
     public Image rightImage;
     public Image actionImage;
 
+
+    public List<Image> imageCommandList;
 
     public void GenerateUICommand(string commandList)
     {
@@ -42,6 +45,8 @@ public class CommandUICreator : MonoBehaviour {
             {
                 Debug.Log(currentPosition);
                 instanciateImg.rectTransform.SetParent(this.transform, false);
+
+                imageCommandList.Add(instanciateImg);
                 //instanciateImg.rectTransform.position = new Vector3(currentPosition, instanciateImg.rectTransform.position.y, instanciateImg.rectTransform.position.z);
             }
 
@@ -49,5 +54,13 @@ public class CommandUICreator : MonoBehaviour {
             
         }
 
+    }
+
+    public void CommandUINoticed(bool isGoodCommand, int index)
+    {
+        if (isGoodCommand)
+            imageCommandList[index].color = Color.green;
+        else
+            imageCommandList[index].color = Color.red;
     }
 }

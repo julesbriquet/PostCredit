@@ -3,6 +3,8 @@ using System.Collections;
 
 public class FinishHimManager : MonoBehaviour {
 
+    public static FinishHimManager Instance;
+
     /*
      * COMMAND:
      * 1 = UP
@@ -16,6 +18,18 @@ public class FinishHimManager : MonoBehaviour {
     public string commandToDo = "";
 
     public CommandUICreator uiCreator;
+
+    void Awake()
+    {
+        if (null == FinishHimManager.Instance)
+        {
+            FinishHimManager.Instance = this;
+        }
+        else if (this != FinishHimManager.Instance)
+        {
+            FinishHimManager.Destroy(this.gameObject);
+        }
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -38,7 +52,7 @@ public class FinishHimManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 
