@@ -365,9 +365,9 @@ MonoBehaviour:
   commandToDo: 
   uiCreator: {fileID: 1208313228}
   timerForDifficulty:
-  - 15
-  - 15
-  - 15
+  - 5
+  - 6
+  - 7
   timeUntilEndGame: 0
   background: {fileID: 1060464180}
 --- !u!4 &924715952
