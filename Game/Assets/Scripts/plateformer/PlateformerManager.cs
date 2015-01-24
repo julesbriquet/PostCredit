@@ -22,6 +22,7 @@ public class PlateformerManager : MonoBehaviour {
 	{
 		this.player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlateformerCharacter>();
 		this.timeUntilEndGame = Time.time + TimerForDifficulty;
+		TimerManager.Instance.StartTimer( TimerForDifficulty );
 	}
 	
 	// Update is called once per frame
