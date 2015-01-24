@@ -36,8 +36,10 @@ public class GameManager : MonoBehaviour {
 
 	public void Restart ()
 	{
+		Debug.Log("restart");
 		this.LevelDifficulty = 1;
 		this.levelSelections = new List<string>(this.levelNames);
+		SetUp();
 		Application.LoadLevel("start");
 	}
 
