@@ -7,28 +7,119 @@ public class LobbyManager : MonoBehaviour
 	public Text MainText;
 	public void Start ()
 	{
-		StartCoroutine("PlayEnd");
+		if(GameManager.Instance.NumberOfPlayer > 1)
+		{
+			StartCoroutine("PlayEndMulti");
+		}
+		else
+		{
+			StartCoroutine("PlayEndSolo");
+		}
 	}
 
-	IEnumerator PlayEnd ()
+	IEnumerator PlayEndSolo ()
 	{
 		Player activePlayer = GameManager.Instance.ActivePlayer;
+		bool win = GameManager.Instance.LastLevelWin;
+		bool stillLevel = GameManager.Instance.StillLevel();
+		bool nextDifficulty = GameManager.Instance.NextDifficulty();
 
-		this.MainText.text = string.Format("Player {0} {1}", GameManager.Instance.ActivePlayer.Id,
-		                              GameManager.Instance.LastLevelWin?"Win":"Loose");
+		if(win)
+		{
+			this.MainText.text = "You win";
+		}
+		else
+		{
+			this.MainText.text = "You loose";
+		}
 
 		yield return new WaitForSeconds(2f);
 
-		activePlayer.Life--;
-		if(activePlayer.Life == 0)
+		if(!win)
 		{
-			//do something.
+			this.MainText.text = "You loose one life";
+			activePlayer.Life--;
+			yield return new WaitForSeconds(1f);
 		}
 
-		this.MainText.text = string.Format("Be ready for the next level");
+		if(activePlayer.Life == 0)
+		{
+			this.MainText.text = "Game Over";
 
-		yield return new WaitForSeconds(1f);
+			yield return new WaitForSeconds(1f);
 
-		GameManager.Instance.LoadLevel();
+			GameManager.Instance.Restart();
+		}
+		else
+		{
+			if(stillLevel)
+			{
+				if(nextDifficulty)
+				{
+					this.MainText.text = "Next difficulty";
+					yield return new WaitForSeconds(1f);
+				}
+
+				this.MainText.text = "Be ready for the next level";
+				
+				yield return new WaitForSeconds(1f);
+				
+				GameManager.Instance.LoadLevel();
+			}
+			else
+			{
+				this.MainText.text = "Congratulation!";
+				
+				yield return new WaitForSeconds(5f);
+				
+				GameManager.Instance.Restart();
+			}
+		}
+	}
+
+	IEnumerator PlayEndMulti ()
+	{
+		Player activePlayer = GameManager.Instance.ActivePlayer;
+		bool nextDifficulty = GameManager.Instance.NextDifficulty();
+		bool win = GameManager.Instance.LastLevelWin;
+		int numberOfPlayerAlive = GameManager.Instance.NumberOfPlayerAlive();
+
+		this.MainText.text = string.Format("Player {0} {1}", GameManager.Instance.ActivePlayer.Id,
+		                                   GameManager.Instance.LastLevelWin?"Win":"Loose");
+		
+		yield return new WaitForSeconds(2f);
+
+		if(!win)
+		{
+			activePlayer.Life--;
+			this.MainText.text = string.Format("Player {0} loose 1 life", activePlayer.Id);
+			yield return new WaitForSeconds(1f);
+		}
+	
+		if(activePlayer.Life == 0)
+		{
+			this.MainText.text = string.Format("Player {0} is dead",activePlayer.Id);
+			yield return new WaitForSeconds(2f);
+		}
+
+		if(numberOfPlayerAlive > 1 )
+		{
+			if(nextDifficulty)
+			{
+				this.MainText.text = "Next difficulty";
+				yield return new WaitForSeconds(1f);
+			}
+			
+			this.MainText.text = string.Format("Be ready for the next level");			
+			yield return new WaitForSeconds(1f);			
+			GameManager.Instance.LoadLevel();
+		}
+		else
+		{
+			this.MainText.text = string.Format("Congratulation player {0}",
+			                                   GameManager.Instance.GetWinner().Id);		
+			yield return new WaitForSeconds(5f);		
+			GameManager.Instance.Restart();
+		}
 	}
 }

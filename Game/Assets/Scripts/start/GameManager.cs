@@ -81,4 +81,41 @@ public class GameManager : MonoBehaviour {
 		this.LastLevelWin = win;
 		Application.LoadLevel("lobby");
 	}
+
+	public bool StillLevel ()
+	{
+		return !(this.LevelDifficulty == 3 && this.levelSelections.Count == 0);
+	}
+
+	public bool NextDifficulty ()
+	{
+		return (this.levelSelections.Count == 0);
+	}
+
+	public int NumberOfPlayerAlive ()
+	{
+		int count = 0;
+		foreach(Player p in this.Players)
+		{
+			if(p.Life > 0)
+			{
+				count ++;
+			}
+		}
+
+		return count;
+	}
+
+	public Player GetWinner ()
+	{
+		foreach(Player p in this.Players)
+		{
+			if(p.Life > 0)
+			{
+				return p;
+			}
+		}
+
+		throw new System.Exception("All Player Dead Exception");
+	}
 }
