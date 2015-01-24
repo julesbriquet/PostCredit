@@ -82,7 +82,7 @@ public class PlateformerCharacter : MonoBehaviour {
 		{
 			if(this.rigidbody2D.collider2D.bounds.min.y < coll.collider.collider2D.bounds.max.y)
 			{
-				this.rigidbody2D.AddForce(new Vector2(0f, PlateformerManager.Instance.GetGravity() * 1.4f));
+				this.rigidbody2D.AddForce(new Vector2(0f, PlateformerManager.Instance.GetGravity() * 3f));
 			}
 		}
 	}

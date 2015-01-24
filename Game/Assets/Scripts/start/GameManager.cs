@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	public bool LastLevelWin = false;
 
 	Player[] Players;
-	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin"};
+	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin","finish_him","pong"};
 	List<string> levelSelections;
 
 	void Awake ()

@@ -2404,6 +2404,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 859535693}
   - 61: {fileID: 859535694}
+  - 61: {fileID: 859535695}
   m_Layer: 0
   m_Name: plateform
   m_TagString: Plateform
@@ -2477,8 +2478,19 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 3.5999999, y: .180000007}
-  m_Center: {x: 1.70000005, y: -.00999999978}
+  m_Size: {x: 2.01999998, y: .180000007}
+  m_Center: {x: .910000026, y: -.00999999978}
+--- !u!61 &859535695
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 859535692}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: .629999995}
+  m_Center: {x: 3.4000001, y: -.200000003}
 --- !u!1 &910474501
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,7 +4960,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 3.5999999, y: .180000007}
-  m_Center: {x: 1.70000005, y: -.00999999978}
+  m_Center: {x: 1.95000005, y: -.00999999978}
 --- !u!1 &1810201716
 GameObject:
   m_ObjectHideFlags: 0
