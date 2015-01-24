@@ -1860,6 +1860,7 @@ MonoBehaviour:
   MoveSpeed: 3
   JumpForce: 12
   Gravity: -40
+  TimerForDifficulty: 5
 --- !u!4 &1115525466
 Transform:
   m_ObjectHideFlags: 0
@@ -2781,7 +2782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a48f5e7c89c5ddd4eb3c75b4729d86f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: -1
+  Speed: -2
 --- !u!61 &1893717667
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3082,7 +3083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13091bb49aa4b7b4f890ed07d689ab60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LockMove: 0
+  LockMove: 1
 --- !u!95 &2010492472
 Animator:
   serializedVersion: 3
