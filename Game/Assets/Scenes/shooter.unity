@@ -164,9 +164,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNumber: 1
-  speed: 500
+  speed: 420
   yMax: 4
   gun: {fileID: 1761734961}
+  slideMovements: 0
 --- !u!212 &447537281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -415,9 +416,9 @@ MonoBehaviour:
   - {fileID: 11462208, guid: f2194327265caa94b946e519d6169b5e, type: 2}
   SpawnPoint: {fileID: 513192686}
   timerForDifficulty:
-  - 5
-  - 5
-  - 5
+  - 6
+  - 8
+  - 9
   timeUntilEndGame: 0
 --- !u!1 &1845242218
 GameObject:

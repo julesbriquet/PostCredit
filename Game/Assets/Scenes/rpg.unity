@@ -1242,7 +1242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameSpeed: 1
-  LevelDifficulty: 3
+  LevelDifficulty: 2
   NumberOfPlayer: 1
   BasePlayerLife: 3
   LastLevelWin: 0
@@ -1746,7 +1746,7 @@ MonoBehaviour:
   TimerForDifficulty:
   - 3
   - 5
-  - 7
+  - 6
   Pannel2: {fileID: 111784072}
   Pannel3: {fileID: 1922123331}
 --- !u!4 &1182668310
