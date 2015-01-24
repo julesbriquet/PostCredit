@@ -15,21 +15,3 @@ EditorBuildSettings:
     path: Assets/Scenes/shooter.unity
   - enabled: 1
     path: Assets/Scenes/lobby.unity
-  - enabled: 1
-    path: Assets/Scenes/coin/coin_1.unity
-  - enabled: 1
-    path: Assets/Scenes/coin/coin_2.unity
-  - enabled: 1
-    path: Assets/Scenes/coin/coin_3.unity
-  - enabled: 1
-    path: Assets/Scenes/jumper/jumper_1.unity
-  - enabled: 1
-    path: Assets/Scenes/jumper/jumper_2.unity
-  - enabled: 1
-    path: Assets/Scenes/jumper/jumper_3.unity
-  - enabled: 1
-    path: Assets/Scenes/plateformer/plateformer_1.unity
-  - enabled: 1
-    path: Assets/Scenes/plateformer/plateformer_2.unity
-  - enabled: 1
-    path: Assets/Scenes/plateformer/plateformer_3.unity
