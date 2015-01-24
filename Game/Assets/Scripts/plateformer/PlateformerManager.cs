@@ -10,6 +10,7 @@ public class PlateformerManager : MonoBehaviour {
 	float timeUntilEndGame;
 
 	public static PlateformerManager Instance;
+	PlateformerCharacter player;
 
 	void Awake ()
 	{
@@ -19,15 +20,16 @@ public class PlateformerManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		this.player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlateformerCharacter>();
 		this.timeUntilEndGame = Time.time + TimerForDifficulty;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Time.time > this.timeUntilEndGame)
+		if(Time.time > this.timeUntilEndGame && !this.player.HasWin)
 		{
-			if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlateformerCharacter>().LockMove)
+			if(this.player.LockMove)
 			{
 				GameManager.Instance.LevelEnd(true);
 			}

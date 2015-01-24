@@ -9,6 +9,7 @@ public class PlateformerCharacter : MonoBehaviour {
 	Animator animator;
 	bool dead = false;
 	bool win = false;
+	public bool HasWin { get { return this.win; } }
 
 	// Use this for initialization
 	void Start () {
