@@ -83,7 +83,7 @@ public class RpgManager : MonoBehaviour {
 
 		this.timeUntilEndGame = Time.time + this.TimerForDifficulty[difficulty];
 
-		TimerManager.Instance.StartTimer(this.timeUntilEndGame);
+		TimerManager.Instance.StartTimer( this.TimerForDifficulty[difficulty] );
 	}
 
 	// Update is called once per frame

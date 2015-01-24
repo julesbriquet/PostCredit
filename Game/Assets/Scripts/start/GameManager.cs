@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour {
 
 	public void Restart ()
 	{
+		this.LevelDifficulty = 1;
 		Application.LoadLevel("start");
 	}
 
