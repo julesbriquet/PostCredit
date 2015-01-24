@@ -87,7 +87,6 @@ public class LobbyCharacter : MonoBehaviour
 
 	void OnCollisionEnter2D ( Collision2D coll )
 	{
-		Debug.Log ("colison");
 		this.hasToMove = true;
 	}
 
