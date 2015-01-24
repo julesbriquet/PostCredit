@@ -82,6 +82,8 @@ public class RpgManager : MonoBehaviour {
 		difficulty = Mathf.Clamp(difficulty,0,3);
 
 		this.timeUntilEndGame = Time.time + this.TimerForDifficulty[difficulty];
+
+		TimerManager.Instance.StartTimer(this.timeUntilEndGame);
 	}
 
 	// Update is called once per frame
