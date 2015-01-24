@@ -23,6 +23,7 @@ public class PongManager : MonoBehaviour {
         
 
         timeUntilEndGame = timerForDifficulty[GameManager.Instance.LevelDifficulty - 1];
+		TimerManager.Instance.StartTimer( timerForDifficulty[GameManager.Instance.LevelDifficulty - 1] );
 	}
 	
 	// Update is called once per frame
