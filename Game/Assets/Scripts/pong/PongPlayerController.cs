@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class PlayerShip : MonoBehaviour
+public class PongPlayerController : MonoBehaviour
 {
 
     public int playerNumber = 1;
@@ -16,9 +16,8 @@ public class PlayerShip : MonoBehaviour
 
     public float yMax;
 
-    public GunEntity gun;
-
     public bool slideMovements;
+
 
     // Use this for initialization
     void Start()
@@ -57,18 +56,6 @@ public class PlayerShip : MonoBehaviour
 
         rigidbody2D.velocity = velocity;
         ScreenLimitControl();
-
-        /*
-         * SHOOTING PART
-         */
-        bool triggerShoot = false;
-        triggerShoot = Input.GetButton("Action" + InputPlayerString);
-
-        if (triggerShoot)
-        {
-            // TODO
-            gun.Shoot(playerNumber);
-        }
 
     }
 
