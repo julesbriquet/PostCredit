@@ -33,3 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/plateformer/plateformer_2.unity
   - enabled: 1
     path: Assets/Scenes/plateformer/plateformer_3.unity
+  - enabled: 1
+    path: Assets/Scenes/pong.unity
+  - enabled: 1
+    path: Assets/Scenes/finish_him.unity

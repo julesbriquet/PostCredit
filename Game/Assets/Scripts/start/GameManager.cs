@@ -14,8 +14,9 @@ public class GameManager : MonoBehaviour {
 	public bool LastLevelWin = false;
 
 	Player[] Players;
-	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin"};
+	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin","finish_him","pong"};
 	List<string> levelSelections;
+	string nextLevel;
 
 	void Awake ()
 	{
@@ -33,11 +34,14 @@ public class GameManager : MonoBehaviour {
 
 	public void Restart ()
 	{
+		this.LevelDifficulty = 1;
+		this.levelSelections = new List<string>(this.levelNames);
 		Application.LoadLevel("start");
 	}
 
 	public void StartGame ()
 	{
+		FindNextLevel();
 		LoadLevel();
 	}
 
@@ -61,27 +65,33 @@ public class GameManager : MonoBehaviour {
 		this.ActivePlayer = this.Players[0];
 	}
 
-	public void LoadLevel ()
+	public string FindNextLevel ()
 	{
 		if(this.levelSelections.Count == 0)
 		{
 			this.LevelDifficulty++;
 			this.levelSelections = new List<string>(this.levelNames);
 		}
-
+		
 		int rand = Random.Range(0,this.levelSelections.Count);
 		string levelName = this.levelSelections[rand];
 		this.levelSelections.RemoveAt(rand);
-
+		
 		if(levelName == "coin" || levelName == "plateformer" || levelName == "jumper")
 		{
 			int levelIndex = Mathf.Clamp(this.LevelDifficulty,1,3);
 			levelName = levelName + "_" + levelIndex;
 		}
+		
+		Debug.Log("Next level will be " + levelName + " // " + this.LevelDifficulty);
+		this.nextLevel = levelName;
+		return levelName;
+	}
 
-		Debug.Log("Load level " + levelName);
-
-		Application.LoadLevel(levelName);
+	public void LoadLevel ()
+	{
+		Debug.Log("LoadLevel " + this.nextLevel);
+		Application.LoadLevel(this.nextLevel);
 	}
 
 	public void LevelEnd(bool win)
