@@ -23,6 +23,8 @@ public class FinishHimManager : MonoBehaviour {
     public float[] timerForDifficulty;
     public float timeUntilEndGame;
 
+    public Transform background;
+
     void Awake()
     {
         if (null == FinishHimManager.Instance)
@@ -37,6 +39,8 @@ public class FinishHimManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+        ResizeBackGround();
 
         commandToDo = "";
 
@@ -93,5 +97,31 @@ public class FinishHimManager : MonoBehaviour {
             return 'R';
 
         return 'B';
+    }
+
+
+    void ResizeBackGround()
+    {
+        SpriteRenderer sr = background.GetComponent<SpriteRenderer>();
+        if (sr == null) return;
+
+        background.localScale = new Vector3(1, 1, 1);
+
+        float width = sr.sprite.bounds.size.x;
+        float height = sr.sprite.bounds.size.y;
+
+
+        float worldScreenHeight = Camera.main.orthographicSize * 2f;
+        float worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
+
+        Vector3 xWidth = background.localScale;
+        xWidth.x = worldScreenWidth / width;
+        background.localScale = xWidth;
+        //transform.localScale.x = worldScreenWidth / width;
+        Vector3 yHeight = background.localScale;
+        yHeight.y = worldScreenHeight / height;
+        background.localScale = yHeight;
+        //transform.localScale.y = worldScreenHeight / height;
+
     }
 }
