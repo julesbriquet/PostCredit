@@ -364,6 +364,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commandToDo: 
   uiCreator: {fileID: 1208313228}
+  timerForDifficulty:
+  - 5
+  - 5
+  - 5
+  timeUntilEndGame: 0
 --- !u!4 &924715952
 Transform:
   m_ObjectHideFlags: 0
