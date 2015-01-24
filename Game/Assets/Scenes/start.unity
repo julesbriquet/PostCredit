@@ -571,6 +571,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameSpeed: 0
   LevelDifficulty: 0
+  NumberOfPlayer: 1
+  BasePlayerLife: 3
+  LastLevelWin: 0
 --- !u!4 &2105654555
 Transform:
   m_ObjectHideFlags: 0

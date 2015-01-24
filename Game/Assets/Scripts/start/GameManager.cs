@@ -81,4 +81,14 @@ public class GameManager : MonoBehaviour {
 		this.LastLevelWin = win;
 		Application.LoadLevel("lobby");
 	}
+
+	public bool StillLevel ()
+	{
+		return !(this.LevelDifficulty == 3 && this.levelSelections.Count == 0);
+	}
+
+	public bool NextDifficulty ()
+	{
+		return (this.levelSelections.Count == 0);
+	}
 }
