@@ -20,18 +20,7 @@ public class ShootEntity : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        /*if (other.tag == "Player")
-        {
-            Player playerEntity = other.GetComponent<Player>();
-            if (playerOrigin != playerEntity.GetPlayerNumber())
-            {
-                playerEntity.GetStun(stunDelay);
-
-                Destroy(gameObject);
-            }
-        }
-        if (other.tag == "Asteroid")*/
-
+        
         PlayerShip player = other.GetComponent<PlayerShip>();
 
         if (playerOrigin > 0)
