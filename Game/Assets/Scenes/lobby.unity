@@ -422,10 +422,10 @@ MonoBehaviour:
   LastScreen: {fileID: 1109685378}
   NextScreen: {fileID: 256709698}
   LobbyResult: {fileID: 472605400}
-  LobbyCounter: {fileID: 736390769}
   winAudio: {fileID: 668342373}
   failAudio: {fileID: 668342372}
   gameOverAudio: {fileID: 668342374}
+  LobbyCounter: {fileID: 736390769}
 --- !u!4 &668342371
 Transform:
   m_ObjectHideFlags: 0
@@ -635,7 +635,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 717140331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0469999984, y: .0370000005, z: 0}
+  m_LocalPosition: {x: .0399999991, y: .0370000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1109685377}
@@ -1662,7 +1662,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1948289367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00300000003, y: .0370000005, z: 0}
+  m_LocalPosition: {x: -.0199999996, y: .0370000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 256709697}
