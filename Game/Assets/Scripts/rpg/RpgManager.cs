@@ -63,16 +63,24 @@ public class RpgManager : MonoBehaviour {
 			switch(this.buttonRpgActions[i])
 			{
 			case RpgAction.escape:
-				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Escape";
+//				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Escape";
+				this.SelectionButtons[i].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_escape");
 				break;
 			case RpgAction.wait:
-				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Wait";
+//				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Wait";
+				this.SelectionButtons[i].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_wait");
 				break;
 			case RpgAction.loose:
-				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Loose";
+//				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Lose";
+				this.SelectionButtons[i].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_lose");
 				break;
 			case RpgAction.super:
-				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Super Attack!";
+//				this.SelectionButtons[i].transform.GetChild(0).GetComponent<Text>().text = "Super Attack!";
+				this.SelectionButtons[i].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_super_attack");
 				break;
 			}
 		}
@@ -156,15 +164,23 @@ public class RpgManager : MonoBehaviour {
 			{
 				this.buttonRpgActions[0] = RpgAction.win;
 				this.buttonRpgActions[1] = RpgAction.loose;
-				this.SelectionButtons2[0].transform.GetChild(0).GetComponent<Text>().text = "Win";
-				this.SelectionButtons2[1].transform.GetChild(0).GetComponent<Text>().text = "Loose";
+//				this.SelectionButtons2[0].transform.GetChild(0).GetComponent<Text>().text = "Win";
+				this.SelectionButtons2[0].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_win_small");
+//				this.SelectionButtons2[1].transform.GetChild(0).GetComponent<Text>().text = "Lose";
+				this.SelectionButtons2[1].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_lose_small");
 			}
 			else
 			{
 				this.buttonRpgActions[0] = RpgAction.loose;
 				this.buttonRpgActions[1] = RpgAction.win;
-				this.SelectionButtons2[0].transform.GetChild(0).GetComponent<Text>().text = "Loose";
-				this.SelectionButtons2[1].transform.GetChild(0).GetComponent<Text>().text = "Win";
+//				this.SelectionButtons2[0].transform.GetChild(0).GetComponent<Text>().text = "Lose";
+				this.SelectionButtons2[0].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_lose_small");
+//				this.SelectionButtons2[1].transform.GetChild(0).GetComponent<Text>().text = "Win";
+				this.SelectionButtons2[1].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_win_small");
 			}
 
 			this.Pannel2.SetActive(true);
@@ -201,15 +217,25 @@ public class RpgManager : MonoBehaviour {
 			{
 				this.buttonRpgActions[0] = RpgAction.yes;
 				this.buttonRpgActions[1] = RpgAction.no;
-				this.SelectionButtons3[0].transform.GetChild(0).GetComponent<Text>().text = "Yes";
-				this.SelectionButtons3[1].transform.GetChild(0).GetComponent<Text>().text = "No";
+//				this.SelectionButtons3[0].transform.GetChild(0).GetComponent<Text>().text = "Yes";
+				this.SelectionButtons3[0].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_yes_small");
+
+//				this.SelectionButtons3[1].transform.GetChild(0).GetComponent<Text>().text = "No";
+				this.SelectionButtons3[1].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_no_small");
 			}
 			else
 			{
 				this.buttonRpgActions[0] = RpgAction.no;
 				this.buttonRpgActions[1] = RpgAction.yes;
-				this.SelectionButtons3[0].transform.GetChild(0).GetComponent<Text>().text = "No";
-				this.SelectionButtons3[1].transform.GetChild(0).GetComponent<Text>().text = "Yes";
+//				this.SelectionButtons3[0].transform.GetChild(0).GetComponent<Text>().text = "No";
+				this.SelectionButtons3[0].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_no_small");
+
+//				this.SelectionButtons3[1].transform.GetChild(0).GetComponent<Text>().text = "Yes";
+				this.SelectionButtons3[1].transform.GetChild(1).GetComponent<Image>().sprite =
+					Resources.Load<Sprite>("txt_yes_small");
 			}
 			
 			this.Pannel3.SetActive(true);

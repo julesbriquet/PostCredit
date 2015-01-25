@@ -117,7 +117,7 @@ public class LobbyManager : MonoBehaviour
 
 		if(!win)
 		{
-			this.MainText.text = "You lose one life";
+			this.MainText.text = "";
 			activePlayer.Life--;
 			this.Hearts.LoseLife(activePlayer.Life);
 			yield return new WaitForSeconds(1f);
