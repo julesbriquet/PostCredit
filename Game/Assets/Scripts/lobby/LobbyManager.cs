@@ -61,6 +61,7 @@ public class LobbyManager : MonoBehaviour
 					if(nextDifficulty)
 					{
 						diff++;
+						diff = Mathf.Clamp(diff,1,3);
 					}
 					screenshot+=("_"+diff);
 				}
@@ -92,6 +93,10 @@ public class LobbyManager : MonoBehaviour
 				{
 					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_survive");
 				}
+				else if(screenshot.Contains("shooter"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_attack");
+				}
 				else
 				{
 					Debug.Log("unknow mission");
@@ -117,7 +122,7 @@ public class LobbyManager : MonoBehaviour
 
 		if(!win)
 		{
-			this.MainText.text = "You lose one life";
+			this.MainText.text = "";
 			activePlayer.Life--;
 			this.Hearts.LoseLife(activePlayer.Life);
 			yield return new WaitForSeconds(1f);

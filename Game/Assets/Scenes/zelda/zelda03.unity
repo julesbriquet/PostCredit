@@ -151,6 +151,8 @@ GameObject:
   - 212: {fileID: 28769805}
   - 61: {fileID: 28769808}
   - 50: {fileID: 28769807}
+  - 114: {fileID: 28769810}
+  - 95: {fileID: 28769809}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -218,6 +220,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -1.1920929e-07, y: -5.96046448e-08}
+--- !u!95 &28769809
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28769804}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &28769810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28769804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &59051376
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +323,8 @@ GameObject:
   - 212: {fileID: 61730577}
   - 61: {fileID: 61730580}
   - 50: {fileID: 61730579}
+  - 114: {fileID: 61730582}
+  - 95: {fileID: 61730581}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -362,6 +392,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: 0}
+--- !u!95 &61730581
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 61730576}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &61730582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 61730576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &67618016
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +548,8 @@ GameObject:
   - 212: {fileID: 132828367}
   - 61: {fileID: 132828370}
   - 50: {fileID: 132828369}
+  - 114: {fileID: 132828372}
+  - 95: {fileID: 132828371}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -559,6 +617,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &132828371
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 132828366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &132828372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 132828366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &252510896
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +720,8 @@ GameObject:
   - 212: {fileID: 330727392}
   - 61: {fileID: 330727395}
   - 50: {fileID: 330727394}
+  - 114: {fileID: 330727397}
+  - 95: {fileID: 330727396}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -703,6 +789,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &330727396
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330727391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &330727397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330727391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &343166833
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +826,8 @@ GameObject:
   - 212: {fileID: 343166834}
   - 61: {fileID: 343166837}
   - 50: {fileID: 343166836}
+  - 95: {fileID: 343166838}
+  - 114: {fileID: 343166839}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -781,6 +895,73 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: -5.96046448e-08}
+--- !u!95 &343166838
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343166833}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &343166839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343166833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &385560892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 385560893}
+  - 114: {fileID: 385560894}
+  m_Layer: 0
+  m_Name: ZeldaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &385560893
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385560892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+--- !u!114 &385560894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385560892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e4472d49da9f543bf4e6afc50789b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfPlant: 0
+  timeUntilEndGame: 20
 --- !u!1 &411611403
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +1064,8 @@ GameObject:
   - 212: {fileID: 451894567}
   - 61: {fileID: 451894570}
   - 50: {fileID: 451894569}
+  - 114: {fileID: 451894572}
+  - 95: {fileID: 451894571}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -950,6 +1133,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &451894571
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451894566}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &451894572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451894566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &458070875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1484,8 @@ GameObject:
   - 212: {fileID: 625386812}
   - 61: {fileID: 625386815}
   - 50: {fileID: 625386814}
+  - 114: {fileID: 625386817}
+  - 95: {fileID: 625386816}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -1342,6 +1553,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: 0}
+--- !u!95 &625386816
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625386811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &625386817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625386811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679762131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +1844,8 @@ GameObject:
   - 212: {fileID: 904817332}
   - 61: {fileID: 904817335}
   - 50: {fileID: 904817334}
+  - 114: {fileID: 904817337}
+  - 95: {fileID: 904817336}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -1674,6 +1913,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &904817336
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904817331}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &904817337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904817331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &919872329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +1950,8 @@ GameObject:
   - 212: {fileID: 919872330}
   - 61: {fileID: 919872333}
   - 50: {fileID: 919872332}
+  - 114: {fileID: 919872335}
+  - 95: {fileID: 919872334}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -1752,6 +2019,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &919872334
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919872329}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &919872335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919872329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &970494455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,6 +2122,8 @@ GameObject:
   - 212: {fileID: 971897762}
   - 61: {fileID: 971897765}
   - 50: {fileID: 971897764}
+  - 114: {fileID: 971897767}
+  - 95: {fileID: 971897766}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -1896,6 +2191,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &971897766
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 971897761}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &971897767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 971897761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1028012326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,6 +2228,8 @@ GameObject:
   - 212: {fileID: 1028012327}
   - 61: {fileID: 1028012330}
   - 50: {fileID: 1028012329}
+  - 114: {fileID: 1028012332}
+  - 95: {fileID: 1028012331}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -1974,6 +2297,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 1.49011612e-08, y: 0}
+--- !u!95 &1028012331
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028012326}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1028012332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028012326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1053174918
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,6 +2562,8 @@ GameObject:
   - 212: {fileID: 1171860593}
   - 61: {fileID: 1171860596}
   - 50: {fileID: 1171860595}
+  - 114: {fileID: 1171860598}
+  - 95: {fileID: 1171860597}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -2280,6 +2631,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: 0}
+--- !u!95 &1171860597
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171860592}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1171860598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171860592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1233062892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2668,8 @@ GameObject:
   - 212: {fileID: 1233062893}
   - 61: {fileID: 1233062896}
   - 50: {fileID: 1233062895}
+  - 114: {fileID: 1233062898}
+  - 95: {fileID: 1233062897}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -2358,6 +2737,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: -5.96046448e-08}
+--- !u!95 &1233062897
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233062892}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1233062898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233062892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1247200319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,6 +3104,8 @@ GameObject:
   - 212: {fileID: 1430993976}
   - 61: {fileID: 1430993979}
   - 50: {fileID: 1430993978}
+  - 114: {fileID: 1430993981}
+  - 95: {fileID: 1430993980}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -2766,6 +3173,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &1430993980
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430993975}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1430993981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430993975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1444776989
 GameObject:
   m_ObjectHideFlags: 0
@@ -2843,6 +3276,8 @@ GameObject:
   - 212: {fileID: 1451848256}
   - 61: {fileID: 1451848259}
   - 50: {fileID: 1451848258}
+  - 114: {fileID: 1451848261}
+  - 95: {fileID: 1451848260}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -2910,6 +3345,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: 0}
+--- !u!95 &1451848260
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451848255}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1451848261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451848255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1496909285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,7 +3470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNumber: 1
-  speed: 250
+  speed: 300
   velocity: {x: 0, y: 0}
   directionFacing: 0
   colliderUp: {fileID: 1133864040}
@@ -3103,6 +3564,8 @@ GameObject:
   - 212: {fileID: 1562397130}
   - 61: {fileID: 1562397133}
   - 50: {fileID: 1562397132}
+  - 114: {fileID: 1562397135}
+  - 95: {fileID: 1562397134}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -3170,6 +3633,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &1562397134
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562397129}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1562397135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562397129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1600428507
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,6 +3739,8 @@ GameObject:
   - 212: {fileID: 1613803609}
   - 61: {fileID: 1613803612}
   - 50: {fileID: 1613803611}
+  - 114: {fileID: 1613803614}
+  - 95: {fileID: 1613803613}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -3317,6 +3808,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: 0}
+--- !u!95 &1613803613
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1613803608}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1613803614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1613803608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1648168475
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,6 +3845,8 @@ GameObject:
   - 212: {fileID: 1648168476}
   - 61: {fileID: 1648168479}
   - 50: {fileID: 1648168478}
+  - 114: {fileID: 1648168481}
+  - 95: {fileID: 1648168480}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -3395,6 +3914,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -1.1920929e-07, y: 0}
+--- !u!95 &1648168480
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648168475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1648168481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648168475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1665046664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,6 +4017,8 @@ GameObject:
   - 212: {fileID: 1669896358}
   - 61: {fileID: 1669896361}
   - 50: {fileID: 1669896360}
+  - 114: {fileID: 1669896363}
+  - 95: {fileID: 1669896362}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -3539,6 +4086,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: 0}
+--- !u!95 &1669896362
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1669896357}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1669896363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1669896357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1697770387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,6 +4123,8 @@ GameObject:
   - 212: {fileID: 1697770388}
   - 61: {fileID: 1697770391}
   - 50: {fileID: 1697770390}
+  - 114: {fileID: 1697770393}
+  - 95: {fileID: 1697770392}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -3617,6 +4192,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: 0}
+--- !u!95 &1697770392
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1697770387}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1697770393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1697770387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1717344418
 GameObject:
   m_ObjectHideFlags: 0
@@ -3628,6 +4229,8 @@ GameObject:
   - 212: {fileID: 1717344419}
   - 61: {fileID: 1717344422}
   - 50: {fileID: 1717344421}
+  - 114: {fileID: 1717344424}
+  - 95: {fileID: 1717344423}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -3695,6 +4298,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -1.1920929e-07, y: 0}
+--- !u!95 &1717344423
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1717344418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1717344424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1717344418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1726478681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,6 +4495,51 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 057279eec34852b4191bac8b2d87da1a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1818584983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1818584985}
+  - 114: {fileID: 1818584984}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1818584984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1818584983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 273fe388e26c3e7418fb1e8126cb2202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSpeed: 0
+  LevelDifficulty: 1
+  NumberOfPlayer: 1
+  BasePlayerLife: 3
+  LastLevelWin: 0
+  animationUI: {fileID: 893074575}
+--- !u!4 &1818584985
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1818584983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &1822105340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,6 +4551,8 @@ GameObject:
   - 212: {fileID: 1822105341}
   - 61: {fileID: 1822105344}
   - 50: {fileID: 1822105343}
+  - 114: {fileID: 1822105346}
+  - 95: {fileID: 1822105345}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -3944,6 +4620,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &1822105345
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822105340}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1822105346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822105340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1843668351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4006,6 +4708,8 @@ GameObject:
   - 212: {fileID: 1902350599}
   - 61: {fileID: 1902350602}
   - 50: {fileID: 1902350601}
+  - 114: {fileID: 1902350604}
+  - 95: {fileID: 1902350603}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -4073,6 +4777,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &1902350603
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1902350598}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1902350604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1902350598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1903184533
 GameObject:
   m_ObjectHideFlags: 0
@@ -4150,6 +4880,8 @@ GameObject:
   - 212: {fileID: 1964399810}
   - 61: {fileID: 1964399813}
   - 50: {fileID: 1964399812}
+  - 114: {fileID: 1964399815}
+  - 95: {fileID: 1964399814}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -4217,6 +4949,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: -5.96046448e-08, y: 0}
+--- !u!95 &1964399814
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964399809}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1964399815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964399809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1976493427
 GameObject:
   m_ObjectHideFlags: 0
@@ -4228,6 +4986,8 @@ GameObject:
   - 212: {fileID: 1976493428}
   - 61: {fileID: 1976493431}
   - 50: {fileID: 1976493430}
+  - 114: {fileID: 1976493433}
+  - 95: {fileID: 1976493432}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -4295,6 +5055,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &1976493432
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976493427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1976493433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976493427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2008044763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,6 +5143,8 @@ GameObject:
   - 212: {fileID: 2011761021}
   - 61: {fileID: 2011761024}
   - 50: {fileID: 2011761023}
+  - 114: {fileID: 2011761026}
+  - 95: {fileID: 2011761025}
   m_Layer: 0
   m_Name: feuille_verte
   m_TagString: ZeldaPlant
@@ -4424,6 +5212,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .159999996, y: .159999996}
   m_Center: {x: 0, y: 0}
+--- !u!95 &2011761025
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2011761020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e41f0100ada95f54099ded34e934b208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2011761026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2011761020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1139e1249fc92a14e9ca8304c6ab52e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2049914877
 GameObject:
   m_ObjectHideFlags: 0
