@@ -61,7 +61,7 @@ public class PlayerShip : MonoBehaviour
 
             velocity = new Vector2(0, speed * inputY * Time.deltaTime);
 
-            Debug.Log("Velocity: " + velocity + ", TimeDelta: " + Time.deltaTime + " timeScale: " + Time.timeScale);
+            //Debug.Log("Velocity: " + velocity + ", TimeDelta: " + Time.deltaTime + " timeScale: " + Time.timeScale);
 
             rigidbody2D.velocity = velocity;
             ScreenLimitControl();

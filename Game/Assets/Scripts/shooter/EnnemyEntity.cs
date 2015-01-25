@@ -73,6 +73,7 @@ public class EnnemyEntity : MonoBehaviour {
         //Destroy(this.gameObject);
         if (GameManager.Instance.LevelDifficulty == 1)
             anim.SetBool("withoutHarm", true);
+        Debug.Log("KIKOO");
         GameManager.Instance.LevelEnd(true);
     }
 
