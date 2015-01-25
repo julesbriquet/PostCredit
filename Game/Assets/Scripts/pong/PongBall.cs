@@ -43,7 +43,10 @@ public class PongBall : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         //float yAngle = 5 * ((this.transform.position.y - other.transform.position.y) / 25);
-        this.speed = new Vector2(-speed.x, speed.y);
+        if (other.tag == "PongBar")
+            this.speed = new Vector2(-speed.x, speed.y);
+        else
+            this.speed = new Vector2(speed.x, -speed.y);
     }
 
     public void SetTimeUntilStart(float secondsUntilStart)
