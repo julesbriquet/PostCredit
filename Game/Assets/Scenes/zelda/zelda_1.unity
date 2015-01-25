@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfPlant: 0
-  timeUntilEndGame: 20
+  timeUntilEndGame: 8
 --- !u!1 &411611403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3404,7 +3404,9 @@ MonoBehaviour:
   NumberOfPlayer: 1
   BasePlayerLife: 3
   LastLevelWin: 0
+  LevelCount: 0
   animationUI: {fileID: 893074575}
+  gameMusic: {fileID: 0}
 --- !u!4 &1818584985
 Transform:
   m_ObjectHideFlags: 0
