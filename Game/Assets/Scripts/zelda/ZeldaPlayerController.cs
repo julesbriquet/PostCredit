@@ -25,6 +25,8 @@ public class ZeldaPlayerController : MonoBehaviour {
     public Collider2D colliderDown;
     public Collider2D colliderLeft;
 
+    public bool buttonReleased = true;
+
 	// Use this for initialization
 	void Start () {
         anim = this.GetComponent<Animator>();
@@ -52,10 +54,11 @@ public class ZeldaPlayerController : MonoBehaviour {
         bool triggerAction = false;
         triggerAction = Input.GetButton("Action" + InputPlayerString);
 
-        
 
-        if (triggerAction)
+
+        if (triggerAction && buttonReleased)
         {
+            buttonReleased = false;
             velocity = Vector2.zero;
             Attacking = true;
             anim.SetBool("Attacking", Attacking);
@@ -67,6 +70,8 @@ public class ZeldaPlayerController : MonoBehaviour {
             else if (directionFacing == FaceDirection.LEFT || directionFacing == FaceDirection.RIGHT)
                 colliderLeft.gameObject.SetActive(true);
         }
+        else if (!triggerAction)
+            buttonReleased = true;
 
         if (!Attacking)
         {

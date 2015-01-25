@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour {
 
     public TransitionAnimations animationUI;
 
+    public bool levelEnding;
+
     public AudioSource gameMusic;
 
 	void Awake ()
@@ -103,6 +105,7 @@ public class GameManager : MonoBehaviour {
 
 	public void LoadLevel ()
 	{
+        levelEnding = false;
 		Debug.Log("LoadLevel " + this.nextLevel);
 		Coin.CoinCount = 0;
 		Coin.Collected = 0;
@@ -112,9 +115,13 @@ public class GameManager : MonoBehaviour {
 
 	public void LevelEnd(bool win)
 	{
-        this.LastLevelWin = win;
-        if (animationUI)
-            animationUI.LaunchEndGameAnimation();
+        if (!levelEnding)
+        {
+            levelEnding = true;
+            this.LastLevelWin = win;
+            if (animationUI)
+                animationUI.LaunchEndGameAnimation();
+        }
 	}
 
     public void ClapEnd()

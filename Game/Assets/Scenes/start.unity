@@ -456,7 +456,7 @@ MonoBehaviour:
   m_VerticalAxis: Vertical_P1
   m_SubmitButton: Submit
   m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
+  m_InputActionsPerSecond: 1
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &682756421
 MonoBehaviour:
@@ -874,6 +874,7 @@ MonoBehaviour:
   LastLevelWin: 0
   LevelCount: 0
   animationUI: {fileID: 0}
+  levelEnding: 0
   gameMusic: {fileID: 2105654556}
 --- !u!4 &2105654555
 Transform:

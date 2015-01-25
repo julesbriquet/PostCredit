@@ -127,20 +127,25 @@ public class PlateformerCharacter : MonoBehaviour {
 		this.rigidbody2D.velocity = Vector2.zero;
 		this.rigidbody2D.AddForce(new Vector2(0f, PlateformerManager.Instance.GetJumpForce()), ForceMode2D.Impulse);
 		this.rigidbody2D.collider2D.isTrigger = true;
+
+        Dead();
 	}
 
 	void Dead ()
 	{
-		if(this.win || !PlateformerManager.Instance.TimerEnding)
+        //Debug.Log("KikooDead " + win + " timer: " + PlateformerManager.Instance.TimerEnding);
+		if(this.win || PlateformerManager.Instance.TimerEnding)
 			return;
 
 		this.dead = true;
+        //Debug.Log("KikooDead");
 		StartCoroutine("DeadEnding");
 	}
 
 	IEnumerator DeadEnding ()
 	{
 		yield return new WaitForSeconds(0.5f);
+        //Debug.Log("KikooDeadEnding");
 		GameManager.Instance.LevelEnd(false);
 	}
 
@@ -155,7 +160,8 @@ public class PlateformerCharacter : MonoBehaviour {
 
 	IEnumerator WinEnding()
 	{
-		yield return new WaitForSeconds(0.8f);
-		GameManager.Instance.LevelEnd(true);
+        
+            yield return new WaitForSeconds(0.8f);
+            GameManager.Instance.LevelEnd(true);
 	}
 }

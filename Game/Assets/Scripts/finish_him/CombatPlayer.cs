@@ -12,6 +12,8 @@ public class CombatPlayer : MonoBehaviour {
 
     private Animator anim;
 
+    public bool dead = false;
+
 	// Use this for initialization
 	void Start () {
         anim = this.GetComponent<Animator>();
@@ -47,7 +49,7 @@ public class CombatPlayer : MonoBehaviour {
 
 
 
-        if (releasedButton)
+        if (releasedButton && !dead)
         {
             if (inputY > 0.5 && inputX == 0 && !triggerAction)
             {
@@ -104,7 +106,10 @@ public class CombatPlayer : MonoBehaviour {
 
             }
             else
+            {
+                dead = true;
                 anim.SetBool("Dead", true);
+            }
         }
 	}
 
