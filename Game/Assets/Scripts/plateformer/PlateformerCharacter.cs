@@ -90,7 +90,10 @@ public class PlateformerCharacter : MonoBehaviour {
 				velocity.x = 0f;
 				this.rigidbody2D.velocity = velocity;
 
-				//this.rigidbody2D.AddForce(new Vector2(0f, PlateformerManager.Instance.GetGravity()));
+				if(this.rigidbody2D.collider2D.bounds.min.y > coll.collider.collider2D.bounds.center.y)
+				{
+					this.rigidbody2D.AddForce(new Vector2(0f, -2f * PlateformerManager.Instance.GetGravity()));
+				}
 			}
 		}
 	}
