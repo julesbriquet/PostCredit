@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 626bda3a287d25a4884efee092a94954
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sprite_attaque_zelda_0
+    21300002: sprite_attaque_zelda_1
+    21300004: sprite_attaque_zelda_2
+    21300006: sprite_attaque_zelda_3
+    21300008: sprite_attaque_zelda_4
+    21300010: sprite_attaque_zelda_5
+    21300012: sprite_attaque_zelda_6
+    21300014: sprite_attaque_zelda_7
+    21300016: sprite_attaque_zelda_8
+    21300018: sprite_attaque_zelda_9
+    21300020: sprite_attaque_zelda_10
+    21300022: sprite_attaque_zelda_11
+    21300024: sprite_attaque_zelda_12
+    21300026: sprite_attaque_zelda_13
+    21300028: sprite_attaque_zelda_14
+    21300030: sprite_attaque_zelda_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sprite_attaque_zelda_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 222
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 222
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 219
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 215
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 221
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 171
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_6
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 169
+        width: 25
+        height: 26
+      alignment: 9
+      pivot: {x: .662872314, y: .522372305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 164
+        width: 29
+        height: 30
+      alignment: 9
+      pivot: {x: .520057917, y: .579999983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_8
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 174
+        width: 19
+        height: 24
+      alignment: 9
+      pivot: {x: .550000012, y: .449999988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 170
+        width: 19
+        height: 28
+      alignment: 9
+      pivot: {x: .400000006, y: .550000012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 115
+        width: 28
+        height: 32
+      alignment: 9
+      pivot: {x: .541548729, y: .600000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 115
+        width: 33
+        height: 31
+      alignment: 9
+      pivot: {x: .570507407, y: .600000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_12
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 124
+        width: 18
+        height: 24
+      alignment: 9
+      pivot: {x: .400000006, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_13
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 124
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 122
+        width: 25
+        height: 31
+      alignment: 9
+      pivot: {x: .600000024, y: .449999988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sprite_attaque_zelda_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 72
+        width: 34
+        height: 31
+      alignment: 9
+      pivot: {x: .430000007, y: .479999989}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
