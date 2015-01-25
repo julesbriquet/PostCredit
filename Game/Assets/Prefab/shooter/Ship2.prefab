@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5062206}
   - 114: {fileID: 11462206}
   - 114: {fileID: 11497368}
+  - 95: {fileID: 9558874}
   m_Layer: 0
   m_Name: HitPoint2
   m_TagString: HitPoint
@@ -32,6 +33,7 @@ GameObject:
   - 61: {fileID: 6162208}
   - 50: {fileID: 5062208}
   - 114: {fileID: 11462208}
+  - 95: {fileID: 9558870}
   m_Layer: 0
   m_Name: Ship2
   m_TagString: Untagged
@@ -52,6 +54,7 @@ GameObject:
   - 50: {fileID: 5062210}
   - 114: {fileID: 11462210}
   - 114: {fileID: 11497366}
+  - 95: {fileID: 9558872}
   m_Layer: 0
   m_Name: HitPoint1
   m_TagString: HitPoint
@@ -66,8 +69,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0320000015, y: -.0198999997, z: 0}
-  m_LocalScale: {x: .841455281, y: .370678008, z: .841455162}
+  m_LocalPosition: {x: -.147, y: .342000008, z: -.289000005}
+  m_LocalScale: {x: .965234637, y: .965234637, z: 7.69161367}
   m_Children: []
   m_Father: {fileID: 462208}
   m_RootOrder: 1
@@ -78,8 +81,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.19000006, y: .680000007, z: 0}
-  m_LocalScale: {x: 7.96864843, y: 53.5891724, z: 7.96864653}
+  m_LocalPosition: {x: 3.54999995, y: .219999999, z: 0}
+  m_LocalScale: {x: 3.46171784, y: 3.46171808, z: 3.46171808}
   m_Children:
   - {fileID: 462210}
   - {fileID: 462206}
@@ -92,8 +95,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0439999998, y: .0194000006, z: 0}
-  m_LocalScale: {x: .841455221, y: .370678008, z: .841455162}
+  m_LocalPosition: {x: -.514999986, y: -.162, z: -.289000005}
+  m_LocalScale: {x: .965234578, y: .965234637, z: 7.69161367}
   m_Children: []
   m_Father: {fileID: 462208}
   m_RootOrder: 0
@@ -151,8 +154,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .100000001, y: .0299999993}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: .13984172, y: .257098585}
+  m_Center: {x: -.00398421288, y: .0179290473}
 --- !u!61 &6162208
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -173,8 +176,53 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .100000001, y: .0299999993}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: .13984172, y: .257098585}
+  m_Center: {x: -.00398421288, y: .0179290473}
+--- !u!95 &9558870
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162208}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8559d24e19be4cd45a2f4ef92f185a1a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9558872
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162210}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5483f302aae7ea645bf2f735294048aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9558874
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162206}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5483f302aae7ea645bf2f735294048aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11462206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,6 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipOwner: {fileID: 0}
+  type: 1
 --- !u!114 &11462208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,6 +252,7 @@ MonoBehaviour:
   gunIndex: 0
   secondsBetweenShoots: 2
   secondsBeforeSwitchGun: 2
+  isDead: 0
 --- !u!114 &11462210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipOwner: {fileID: 0}
+  type: 0
 --- !u!114 &11497366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0bf002a33897684ba16b693ef6258fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootObject: {fileID: 112406, guid: ea79c2919b5b57d439c99559e6b6b43e, type: 2}
+  shootObject: {fileID: 196470, guid: c71ec17d81ccc504fbdd435c3e6a4a5c, type: 2}
   typeOfGun: 0
   roundPerMinute: 1000
   hasTriggerBeenRelease: 1
@@ -243,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0bf002a33897684ba16b693ef6258fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootObject: {fileID: 112406, guid: ea79c2919b5b57d439c99559e6b6b43e, type: 2}
+  shootObject: {fileID: 196470, guid: c71ec17d81ccc504fbdd435c3e6a4a5c, type: 2}
   typeOfGun: 0
   roundPerMinute: 1000
   hasTriggerBeenRelease: 1
@@ -269,7 +320,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d9b4f59b10d3444428a046908e973312, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e711048feb408c418c663d6b65181f7, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!212 &21262208
 SpriteRenderer:
@@ -291,8 +342,8 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d9b4f59b10d3444428a046908e973312, type: 3}
-  m_Color: {r: .241379261, g: 0, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b83fc63b2f34a2e4cad71527da3336e9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21262210
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -313,7 +364,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d9b4f59b10d3444428a046908e973312, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e711048feb408c418c663d6b65181f7, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1001 &100100000
 Prefab:

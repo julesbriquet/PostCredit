@@ -33,7 +33,7 @@ public class ShootEntity : MonoBehaviour
         }
         else if (player)
         {
-            GameManager.Instance.LevelEnd(false);
+            player.dead = true;
         }
     }
 }

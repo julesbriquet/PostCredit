@@ -131,6 +131,7 @@ GameObject:
   - 114: {fileID: 447537280}
   - 50: {fileID: 447537279}
   - 61: {fileID: 447537283}
+  - 95: {fileID: 447537284}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -169,6 +170,8 @@ MonoBehaviour:
   yMax: 4
   gun: {fileID: 1761734961}
   slideMovements: 0
+  dead: 0
+  animator: {fileID: 0}
 --- !u!212 &447537281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -189,7 +192,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dc4b1e5776b19b647a5188e420b54306, type: 3}
+  m_Sprite: {fileID: 21300020, guid: fbe571561eb6fdd44a81aa0830d7d351, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &447537282
 Transform:
@@ -199,7 +202,7 @@ Transform:
   m_GameObject: {fileID: 447537278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.46999979, y: 1.00999999, z: 0}
-  m_LocalScale: {x: .476200104, y: .476200163, z: .476200163}
+  m_LocalScale: {x: 3.14606309, y: 3.14606166, z: 3.14606166}
   m_Children:
   - {fileID: 1761734960}
   m_Father: {fileID: 0}
@@ -213,8 +216,23 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 4.28999949, y: 2.81999993}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: .584479511, y: .371939927}
+  m_Center: {x: .00358909019, y: -.0113523211}
+--- !u!95 &447537284
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447537278}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 980ad8d545ade5d4fb500ef73370e43e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &513192685
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,6 +454,7 @@ MonoBehaviour:
   leftEndGameBackground: {fileID: 536529446}
   rightEndGameBackground: {fileID: 2121482601}
   speed: 15
+  isAnimationFinished: 0
 --- !u!1 &1761734959
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +478,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761734959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.16000009, y: -1.08000004, z: 0}
+  m_LocalPosition: {x: .181999996, y: -.156000003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 447537282}
@@ -657,7 +676,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ceb8e9c038d6a19479182fc4fd14d5ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98107fb0fbc310043b6eabd918432c3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1845242220
 Transform:

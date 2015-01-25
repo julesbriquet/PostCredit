@@ -3,7 +3,15 @@ using System.Collections;
 
 public class HitPoint : MonoBehaviour {
 
+    public enum HitType
+    {
+        ARM,
+        HEAD
+    };
+
     public EnnemyEntity shipOwner;
+
+    public HitType type;
 
     void Start()
     {
@@ -14,5 +22,10 @@ public class HitPoint : MonoBehaviour {
     {
         shipOwner.hitPointNumber--;
         shipOwner.gun.Remove(this.GetComponent<GunEntity>());
+
+        if (GameManager.Instance.LevelDifficulty > 1 && type == HitType.ARM)
+            shipOwner.KillArm();
+        else if (GameManager.Instance.LevelDifficulty > 1 && type == HitType.HEAD)
+            shipOwner.KillHead();
     }
 }
