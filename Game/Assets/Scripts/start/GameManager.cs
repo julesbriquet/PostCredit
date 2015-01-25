@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour {
 	public bool LastLevelWin = false;
 	public int LevelCount;
 
+
+
 	Player[] Players;
 	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin","finish_him","pong","zelda"};
 	List<string> levelSelections;
@@ -102,6 +104,8 @@ public class GameManager : MonoBehaviour {
 	public void LoadLevel ()
 	{
 		Debug.Log("LoadLevel " + this.nextLevel);
+		Coin.CoinCount = 0;
+		Coin.Collected = 0;
 		this.LevelCount++;
 		Application.LoadLevel(this.nextLevel);
 	}

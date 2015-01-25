@@ -3042,7 +3042,9 @@ MonoBehaviour:
   NumberOfPlayer: 1
   BasePlayerLife: 3
   LastLevelWin: 0
+  LevelCount: 0
   animationUI: {fileID: 2048276991}
+  gameMusic: {fileID: 0}
 --- !u!4 &557498637
 Transform:
   m_ObjectHideFlags: 0
@@ -6017,6 +6019,7 @@ MonoBehaviour:
   JumpForce: 7
   Gravity: -20
   TimerForDifficulty: 5
+  TimerEnding: 0
 --- !u!4 &1115525466
 Transform:
   m_ObjectHideFlags: 0

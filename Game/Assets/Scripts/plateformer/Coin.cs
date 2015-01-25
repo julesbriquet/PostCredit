@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Coin : MonoBehaviour {
 
-	static int CoinCount;
-	static int Collected;
+	public static int CoinCount;
+	public static int Collected;
 	void Awake ()
 	{
 		Coin.CoinCount++;
