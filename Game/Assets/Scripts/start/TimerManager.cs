@@ -64,7 +64,7 @@ public class TimerManager : MonoBehaviour {
 			{
 				Debug.Log("SHOOT");
 				shoot = true;
-				string name = "c:/" + Application.loadedLevelName + "_" + GameManager.Instance.LevelDifficulty + ".png";
+				string name = Application.loadedLevelName + "_" + GameManager.Instance.LevelDifficulty + ".png";
 				Application.CaptureScreenshot(name);
 			}
 

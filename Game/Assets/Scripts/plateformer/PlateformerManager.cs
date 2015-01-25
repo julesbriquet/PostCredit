@@ -12,6 +12,8 @@ public class PlateformerManager : MonoBehaviour {
 	public static PlateformerManager Instance;
 	PlateformerCharacter player;
 
+	public bool TimerEnding = false;
+
 	void Awake ()
 	{
 		PlateformerManager.Instance = this;
@@ -30,6 +32,8 @@ public class PlateformerManager : MonoBehaviour {
 	{
 		if(Time.time > this.timeUntilEndGame && !this.player.HasWin)
 		{
+			this.TimerEnding = true;
+
 			if(this.player.LockMove)
 			{
 				GameManager.Instance.LevelEnd(true);
