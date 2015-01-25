@@ -3187,7 +3187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f79b45c332396642a98d5c46520f690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Height: .400000006
+  Height: .300000012
   Speed: .5
 --- !u!61 &789419534
 BoxCollider2D:
@@ -4104,7 +4104,7 @@ MonoBehaviour:
   MoveSpeed: 3
   JumpForce: 7
   Gravity: -20
-  TimerForDifficulty: 4
+  TimerForDifficulty: 5
 --- !u!4 &1115525466
 Transform:
   m_ObjectHideFlags: 0
