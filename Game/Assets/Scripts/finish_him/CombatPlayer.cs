@@ -10,8 +10,11 @@ public class CombatPlayer : MonoBehaviour {
     public int commandIndex = 0;
     public bool releasedButton = true;
 
+    private Animator anim;
+
 	// Use this for initialization
 	void Start () {
+        anim = this.GetComponent<Animator>();
         commandIndex = 0;
 	}
 	
@@ -95,7 +98,7 @@ public class CombatPlayer : MonoBehaviour {
                 commandIndex++;
 
                 if (commandIndex == FinishHimManager.Instance.commandToDo.Length)
-                    GameManager.Instance.LevelEnd(true);
+                    anim.SetBool("FinishHIM", true);
 
             }
             else
@@ -111,4 +114,10 @@ public class CombatPlayer : MonoBehaviour {
             return false;
 
     }
+
+    public void FinishLevel()
+    {
+        GameManager.Instance.LevelEnd(true);
+    }
+
 }
