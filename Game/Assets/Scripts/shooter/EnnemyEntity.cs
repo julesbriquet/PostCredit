@@ -71,7 +71,8 @@ public class EnnemyEntity : MonoBehaviour {
     public void Kill()
     {
         //Destroy(this.gameObject);
-        anim.SetBool("withoutHarm", true);
+        if (GameManager.Instance.LevelDifficulty == 1)
+            anim.SetBool("withoutHarm", true);
         GameManager.Instance.LevelEnd(true);
     }
 
