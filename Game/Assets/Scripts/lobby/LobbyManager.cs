@@ -8,6 +8,10 @@ public class LobbyManager : MonoBehaviour
 	public LobbyCharacter Character;
 
 	public Text MainText;
+
+	public Tv LastScreen;
+	public Tv NextScreen;
+
 	public void Start ()
 	{
 		this.Hearts.SetUp(GameManager.Instance.ActivePlayer.Life);
@@ -31,9 +35,73 @@ public class LobbyManager : MonoBehaviour
 
 		string nextLevel = string.Empty;
 
+
+		//Set previous screenshot
+		{
+			string screenshot = GameManager.Instance.LastLevelLobby;
+			if(!screenshot.Contains("coin") && !screenshot.Contains("plateformer") && !screenshot.Contains("jump"))
+			{
+				int diff = GameManager.Instance.LevelDifficulty;
+				screenshot+=("_"+diff);
+			}
+			Debug.Log("prev :" + screenshot + ".png");
+			Debug.Log("prev : " + Resources.Load<Sprite>(screenshot));
+			this.LastScreen.Screenshot.sprite = (Sprite) Resources.Load<Sprite>(screenshot);
+		}
+
 		if(stillLevel)
 		{
 			nextLevel = GameManager.Instance.FindNextLevel();
+			//Set next screenshot
+			{
+				string screenshot = nextLevel;
+				if(!screenshot.Contains("coin") && !screenshot.Contains("plateformer") && !screenshot.Contains("jump"))
+				{
+					int diff = GameManager.Instance.LevelDifficulty;
+					if(nextDifficulty)
+					{
+						diff++;
+					}
+					screenshot+=("_"+diff);
+				}
+				Debug.Log("next :" + screenshot + ".png");
+				Debug.Log("next :" + Resources.Load<Sprite>(screenshot));
+				this.NextScreen.Screenshot.sprite = (Sprite) Resources.Load<Sprite>(screenshot);
+
+				if(screenshot.Contains("coin"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_collect");
+				}
+				else if(screenshot.Contains("plateformer"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_jump");
+				}
+				else if(screenshot.Contains("jump"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_jump");
+				}
+				else if(screenshot.Contains("finish_him"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_finish_him");
+				}
+				else if(screenshot.Contains("rpg"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_attack");
+				}
+				else if(screenshot.Contains("pong"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_survive");
+				}
+				else
+				{
+					Debug.Log("unknow mission");
+				}
+			}
+		}
+		else
+		{
+			this.NextScreen.Screenshot.sprite = (Sprite) Resources.Load<Sprite>("black");
+			GameObject.Destroy(this.NextScreen.Todo);
 		}
 
 		if(win)
