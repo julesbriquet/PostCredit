@@ -9,7 +9,8 @@ public class ColliderScript : MonoBehaviour {
 
         if (other.tag == "ZeldaPlant")
         {
-            Destroy(other.gameObject);
+            PlantScript plant = other.GetComponent<PlantScript>();
+            plant.LaunchAnimationDestroy();
         }
     }
 }

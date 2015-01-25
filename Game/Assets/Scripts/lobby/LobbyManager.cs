@@ -61,6 +61,7 @@ public class LobbyManager : MonoBehaviour
 					if(nextDifficulty)
 					{
 						diff++;
+						diff = Mathf.Clamp(diff,1,3);
 					}
 					screenshot+=("_"+diff);
 				}
@@ -91,6 +92,10 @@ public class LobbyManager : MonoBehaviour
 				else if(screenshot.Contains("pong"))
 				{
 					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_survive");
+				}
+				else if(screenshot.Contains("shooter"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_attack");
 				}
 				else
 				{

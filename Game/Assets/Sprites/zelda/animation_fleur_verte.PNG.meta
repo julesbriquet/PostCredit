@@ -1,0 +1,102 @@
+fileFormatVersion: 2
+guid: c88823be73f785c40b9660b341720a26
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: animation_fleur_verte_0
+    21300002: animation_fleur_verte_1
+    21300004: animation_fleur_verte_5
+    21300006: animation_fleur_verte_12
+    21300008: animation_fleur_verte_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: animation_fleur_verte_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animation_fleur_verte_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animation_fleur_verte_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 86
+        width: 37
+        height: 30
+      alignment: 9
+      pivot: {x: .47964105, y: .590395629}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animation_fleur_verte_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 93
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animation_fleur_verte_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 25
+        width: 50
+        height: 41
+      alignment: 9
+      pivot: {x: .487947285, y: .584516108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
