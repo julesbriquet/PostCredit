@@ -1854,7 +1854,7 @@ MonoBehaviour:
   - {fileID: 1921980205}
   - {fileID: 1388047489}
   TimerForDifficulty:
-  - 3
+  - 4
   - 5
   - 6
   Pannel2: {fileID: 111784072}
