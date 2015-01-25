@@ -6852,7 +6852,7 @@ MonoBehaviour:
   MoveSpeed: 3
   JumpForce: 7
   Gravity: -20
-  TimerForDifficulty: 4
+  TimerForDifficulty: 5
 --- !u!4 &1115525466
 Transform:
   m_ObjectHideFlags: 0

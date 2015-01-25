@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin","finish_him","pong"};
 	List<string> levelSelections;
 	string nextLevel;
+	public string LastLevelLobby { get { return this.nextLevel; }}
 
     public TransitionAnimations animationUI;
 

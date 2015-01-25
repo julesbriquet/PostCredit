@@ -41,7 +41,7 @@ public class TimerManager : MonoBehaviour {
 		this.startTime = Time.time;
 		this.started = true;
 	}
-
+	bool shoot = false;
 	// Update is called once per frame
 	void Update () 
 	{
@@ -58,6 +58,14 @@ public class TimerManager : MonoBehaviour {
 			if(this.delayTimer > 0f)
 			{	
 				t =	Mathf.Clamp(tP / this.delayTimer,0f,1f);
+			}
+
+			if(!shoot && t > 0.2f)
+			{
+				Debug.Log("SHOOT");
+				shoot = true;
+				string name = Application.loadedLevelName + "_" + GameManager.Instance.LevelDifficulty;
+				Application.CaptureScreenshot(name);
 			}
 
 			float x = Mathf.Lerp(this.startPosition, this.finalPosition, t);
