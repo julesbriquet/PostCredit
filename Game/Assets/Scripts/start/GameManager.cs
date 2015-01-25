@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	public bool LastLevelWin = false;
 
 	Player[] Players;
-	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin","finish_him","pong"};
+	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin","finish_him","pong","zelda"};
 	List<string> levelSelections;
 	string nextLevel;
 	public string LastLevelLobby { get { return this.nextLevel; }}
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour {
 		string levelName = this.levelSelections[rand];
 		this.levelSelections.RemoveAt(rand);
 		
-		if(levelName == "coin" || levelName == "plateformer" || levelName == "jumper")
+		if(levelName == "coin" || levelName == "plateformer" || levelName == "jumper" || levelName == "zelda")
 		{
 			int levelIndex = Mathf.Clamp(this.LevelDifficulty,1,3);
 			levelName = levelName + "_" + levelIndex;
