@@ -15,16 +15,23 @@ public class PongManager : MonoBehaviour {
 
         ResizeBackGround();
 
-        for (int i = 0; i < GameManager.Instance.LevelDifficulty; i++) {
-            PongBall ball = Instantiate(ballToSpawn, Vector3.zero, Quaternion.identity) as PongBall;
-            ball.secondsToWaitBeforeStart = ((float)((i + 1) * 1.1f));
-            ball.speed = new Vector2(ball.speed.x, (ball.speed.y) * Mathf.Pow(-1, i));
-        }
+        StartCoroutine("SpawnBall");
         
 
         timeUntilEndGame = timerForDifficulty[GameManager.Instance.LevelDifficulty - 1];
 		TimerManager.Instance.StartTimer( timerForDifficulty[GameManager.Instance.LevelDifficulty - 1] );
 	}
+
+    IEnumerator SpawnBall()
+    {
+        for (int i = 0; i < GameManager.Instance.LevelDifficulty; i++)
+        {
+            PongBall ball = Instantiate(ballToSpawn, Vector3.zero, Quaternion.identity) as PongBall;
+            ball.secondsToWaitBeforeStart = ((float)((i + 1) * 1.1f));
+            ball.speed = new Vector2(ball.speed.x, (ball.speed.y) * Mathf.Pow(-1, i));
+            yield return null;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {

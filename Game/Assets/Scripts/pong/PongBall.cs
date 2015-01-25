@@ -16,7 +16,7 @@ public class PongBall : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         if (Time.time > startingTime)
         {
@@ -42,6 +42,7 @@ public class PongBall : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        //float yAngle = 5 * ((this.transform.position.y - other.transform.position.y) / 25);
         this.speed = new Vector2(-speed.x, speed.y);
     }
 
