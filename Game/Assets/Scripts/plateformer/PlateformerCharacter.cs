@@ -131,7 +131,7 @@ public class PlateformerCharacter : MonoBehaviour {
 
 	void Dead ()
 	{
-		if(this.win)
+		if(this.win || !PlateformerManager.Instance.TimerEnding)
 			return;
 
 		this.dead = true;
@@ -146,7 +146,7 @@ public class PlateformerCharacter : MonoBehaviour {
 
 	void Win ()
 	{
-		if(!this.dead)
+		if(!this.dead && !PlateformerManager.Instance.TimerEnding)
 		{
 			this.win = true;
 			StartCoroutine("WinEnding");
