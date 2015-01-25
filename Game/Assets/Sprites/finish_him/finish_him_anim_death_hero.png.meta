@@ -20,6 +20,15 @@ TextureImporter:
     21300030: finish_him_anim_death_hero_15
     21300032: finish_him_anim_death_hero_16
     21300034: finish_him_anim_death_hero_17
+    21300036: finish_him_anim_death_hero_18
+    21300038: finish_him_anim_death_hero_19
+    21300040: finish_him_anim_death_hero_20
+    21300042: finish_him_anim_death_hero_21
+    21300044: finish_him_anim_death_hero_22
+    21300046: finish_him_anim_death_hero_23
+    21300048: finish_him_anim_death_hero_24
+    21300050: finish_him_anim_death_hero_25
+    21300052: finish_him_anim_death_hero_26
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -40,7 +49,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -65,179 +74,269 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 312
-        width: 106
-        height: 200
+        y: 784
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_1
       rect:
         serializedVersion: 2
-        x: 106
-        y: 312
-        width: 106
-        height: 200
+        x: 255
+        y: 784
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_2
       rect:
         serializedVersion: 2
-        x: 212
-        y: 312
-        width: 106
-        height: 200
+        x: 510
+        y: 784
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_3
       rect:
         serializedVersion: 2
-        x: 318
-        y: 312
-        width: 106
-        height: 200
+        x: 765
+        y: 784
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_4
       rect:
         serializedVersion: 2
-        x: 424
-        y: 312
-        width: 106
-        height: 200
+        x: 1020
+        y: 784
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_5
       rect:
         serializedVersion: 2
-        x: 530
-        y: 312
-        width: 106
-        height: 200
+        x: 1275
+        y: 784
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_6
       rect:
         serializedVersion: 2
-        x: 636
-        y: 312
-        width: 106
-        height: 200
+        x: 1530
+        y: 784
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_7
       rect:
         serializedVersion: 2
-        x: 742
-        y: 312
-        width: 106
-        height: 200
+        x: 1785
+        y: 784
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_8
       rect:
         serializedVersion: 2
-        x: 848
-        y: 312
-        width: 106
-        height: 200
+        x: 0
+        y: 544
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
-        width: 106
-        height: 200
+        x: 255
+        y: 544
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_10
       rect:
         serializedVersion: 2
-        x: 106
-        y: 112
-        width: 106
-        height: 200
+        x: 510
+        y: 544
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_11
       rect:
         serializedVersion: 2
-        x: 212
-        y: 112
-        width: 106
-        height: 200
+        x: 765
+        y: 544
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_12
       rect:
         serializedVersion: 2
-        x: 318
-        y: 112
-        width: 106
-        height: 200
+        x: 1020
+        y: 544
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_13
       rect:
         serializedVersion: 2
-        x: 424
-        y: 112
-        width: 106
-        height: 200
+        x: 1275
+        y: 544
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_14
       rect:
         serializedVersion: 2
-        x: 530
-        y: 112
-        width: 106
-        height: 200
+        x: 1530
+        y: 544
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_15
       rect:
         serializedVersion: 2
-        x: 636
-        y: 112
-        width: 106
-        height: 200
+        x: 1785
+        y: 544
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_16
       rect:
         serializedVersion: 2
-        x: 742
-        y: 112
-        width: 106
-        height: 200
+        x: 0
+        y: 304
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: finish_him_anim_death_hero_17
       rect:
         serializedVersion: 2
-        x: 848
-        y: 112
-        width: 106
-        height: 200
+        x: 255
+        y: 304
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_18
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 304
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_19
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 304
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_20
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 304
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_21
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 304
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_22
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 304
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_23
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 304
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_25
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 64
+        width: 255
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_death_hero_26
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 64
+        width: 255
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

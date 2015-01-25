@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: 3f1d5297d4d1bdb47a97fd2274ef7c47
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: finish_him_anim_gg_0
+    21300002: finish_him_anim_gg_1
+    21300004: finish_him_anim_gg_2
+    21300006: finish_him_anim_gg_3
+    21300008: finish_him_anim_gg_4
+    21300010: finish_him_anim_gg_5
+    21300012: finish_him_anim_gg_6
+    21300014: finish_him_anim_gg_7
+    21300016: finish_him_anim_gg_8
+    21300018: finish_him_anim_gg_9
+    21300020: finish_him_anim_gg_10
+    21300022: finish_him_anim_gg_11
+    21300024: finish_him_anim_gg_12
+    21300026: finish_him_anim_gg_13
+    21300028: finish_him_anim_gg_14
+    21300030: finish_him_anim_gg_15
+    21300032: finish_him_anim_gg_16
+    21300034: finish_him_anim_gg_17
+    21300036: finish_him_anim_gg_18
+    21300038: finish_him_anim_gg_19
+    21300040: finish_him_anim_gg_20
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -21,17 +42,17 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 1024
+  textureFormat: -3
+  maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +63,216 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: finish_him_anim_gg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 847
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_2
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 847
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_3
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 847
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_4
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 847
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 670
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_6
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 670
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 670
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_8
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 670
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_9
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 670
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 493
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 493
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_12
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 493
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_13
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 493
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_14
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 493
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 316
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_16
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 316
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_17
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 316
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_18
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 316
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_19
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 316
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finish_him_anim_gg_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

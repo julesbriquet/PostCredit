@@ -11,7 +11,6 @@ public class CombatPlayer : MonoBehaviour {
     public bool releasedButton = true;
 
     private Animator anim;
-    public Animator animMonster;
 
 	// Use this for initialization
 	void Start () {
@@ -101,12 +100,11 @@ public class CombatPlayer : MonoBehaviour {
                 if (commandIndex == FinishHimManager.Instance.commandToDo.Length)
                 {
                     anim.SetBool("FinishHIM", true);
-                    animMonster.SetBool("dead", true);
                 }
 
             }
             else
-                GameManager.Instance.LevelEnd(false);
+                anim.SetBool("Dead", true);
         }
 	}
 
@@ -122,6 +120,11 @@ public class CombatPlayer : MonoBehaviour {
     public void FinishLevel()
     {
         GameManager.Instance.LevelEnd(true);
+    }
+
+    public void FinishLevelDead()
+    {
+        GameManager.Instance.LevelEnd(false);
     }
 
 }
