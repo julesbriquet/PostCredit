@@ -41,7 +41,7 @@ public class LobbyManager : MonoBehaviour
 		//Set previous screenshot
 		{
 			string screenshot = GameManager.Instance.LastLevelLobby;
-			if(!screenshot.Contains("coin") && !screenshot.Contains("plateformer") && !screenshot.Contains("jump"))
+			if(!screenshot.Contains("coin") && !screenshot.Contains("plateformer") && !screenshot.Contains("jump")&& !screenshot.Contains("zelda"))
 			{
 				int diff = GameManager.Instance.LevelDifficulty;
 				screenshot+=("_"+diff);
@@ -57,7 +57,7 @@ public class LobbyManager : MonoBehaviour
 			//Set next screenshot
 			{
 				string screenshot = nextLevel;
-				if(!screenshot.Contains("coin") && !screenshot.Contains("plateformer") && !screenshot.Contains("jump"))
+				if(!screenshot.Contains("coin") && !screenshot.Contains("plateformer") && !screenshot.Contains("jump")&& !screenshot.Contains("zelda"))
 				{
 					int diff = GameManager.Instance.LevelDifficulty;
 					if(nextDifficulty)
@@ -96,6 +96,10 @@ public class LobbyManager : MonoBehaviour
 					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_survive");
 				}
 				else if(screenshot.Contains("shooter"))
+				{
+					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_attack");
+				}
+				else if(screenshot.Contains("zelda"))
 				{
 					this.NextScreen.Todo.sprite = (Sprite) Resources.Load<Sprite>("txt_attack");
 				}

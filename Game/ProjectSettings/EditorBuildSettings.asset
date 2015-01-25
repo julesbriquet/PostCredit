@@ -37,3 +37,9 @@ EditorBuildSettings:
     path: Assets/Scenes/pong.unity
   - enabled: 1
     path: Assets/Scenes/finish_him.unity
+  - enabled: 1
+    path: Assets/Scenes/zelda/zelda_1.unity
+  - enabled: 1
+    path: Assets/Scenes/zelda/zelda_2.unity
+  - enabled: 1
+    path: Assets/Scenes/zelda/zelda_3.unity
