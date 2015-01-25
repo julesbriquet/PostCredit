@@ -111,6 +111,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110277516
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FinishHim_Monster_attack
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 63816f8b2a36aef49b83a3cb226feb21, type: 2}
+  m_ParentStateMachine: {fileID: 110723382}
+  m_Position: {x: 215, y: 365, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1107 &110723382
 StateMachine:
   serializedVersion: 2
@@ -123,6 +138,7 @@ StateMachine:
   - {fileID: 110223382}
   - {fileID: 110235104}
   - {fileID: 110210556}
+  - {fileID: 110277516}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:

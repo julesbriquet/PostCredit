@@ -14,6 +14,11 @@ public class LobbyManager : MonoBehaviour
 
 	public Image LobbyResult;
 
+    public AudioSource winAudio;
+    public AudioSource failAudio;
+    public AudioSource gameOverAudio;
+
+
 	public void Start ()
 	{
 		this.Hearts.SetUp(GameManager.Instance.ActivePlayer.Life);
@@ -37,6 +42,10 @@ public class LobbyManager : MonoBehaviour
 
 		string nextLevel = string.Empty;
 
+        if (win)
+            winAudio.Play();
+        else
+            failAudio.Play();
 
 		//Set previous screenshot
 		{
@@ -141,9 +150,10 @@ public class LobbyManager : MonoBehaviour
 		{
 //			this.MainText.text = "Game Over";
 			this.LobbyResult.sprite = (Sprite) Resources.Load<Sprite>("txt_game_over");
+            gameOverAudio.Play();
+			yield return new WaitForSeconds(2.7f);
 
-			yield return new WaitForSeconds(1f);
-
+            GameManager.Instance.gameMusic.Stop();
 			GameManager.Instance.Restart();
 		}
 		else
