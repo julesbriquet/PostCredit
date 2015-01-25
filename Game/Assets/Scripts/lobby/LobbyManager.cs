@@ -14,6 +14,8 @@ public class LobbyManager : MonoBehaviour
 
 	public Image LobbyResult;
 
+	public Image LobbyCounter;
+
 	public void Start ()
 	{
 		this.Hearts.SetUp(GameManager.Instance.ActivePlayer.Life);
@@ -37,6 +39,9 @@ public class LobbyManager : MonoBehaviour
 
 		string nextLevel = string.Empty;
 
+		{
+			SetLobbyCounter();
+		}
 
 		//Set previous screenshot
 		{
@@ -222,5 +227,12 @@ public class LobbyManager : MonoBehaviour
 			yield return new WaitForSeconds(5f);		
 			GameManager.Instance.Restart();
 		}
+	}
+
+	void SetLobbyCounter()
+	{
+		Debug.Log("SetLobbyCounter");
+		this.LobbyCounter.enabled = true;
+		this.LobbyCounter.sprite = Resources.Load<Sprite>("chiffres/chiffres_" + GameManager.Instance.LevelCount);
 	}
 }

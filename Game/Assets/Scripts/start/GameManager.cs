@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 	public int NumberOfPlayer = 1;
 	public int BasePlayerLife = 3;
 	public bool LastLevelWin = false;
+	public int LevelCount;
 
 	Player[] Players;
 	string[] levelNames  = {"shooter","rpg","plateformer","jumper","coin","finish_him","pong","zelda"};
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour {
 	public void Restart ()
 	{
 		Debug.Log("restart");
+		this.LevelCount = 0;
 		this.LevelDifficulty = 1;
 		this.levelSelections = new List<string>(this.levelNames);
 		SetUp();
@@ -46,12 +48,14 @@ public class GameManager : MonoBehaviour {
 
 	public void StartGame ()
 	{
+		this.LevelCount =0;
 		FindNextLevel();
 		LoadLevel();
 	}
 
 	void SetUp()
 	{
+		this.LevelCount = 0;
 		this.levelSelections = new List<string>(this.levelNames);
 
 		if( 0 == this.LevelDifficulty )
@@ -96,6 +100,7 @@ public class GameManager : MonoBehaviour {
 	public void LoadLevel ()
 	{
 		Debug.Log("LoadLevel " + this.nextLevel);
+		this.LevelCount++;
 		Application.LoadLevel(this.nextLevel);
 	}
 

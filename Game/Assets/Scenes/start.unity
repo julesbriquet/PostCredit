@@ -515,10 +515,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 59412412}
   m_RootOrder: 3
-  m_AnchorMin: {x: .00875304639, y: .683000028}
-  m_AnchorMax: {x: .131000012, y: .738699496}
-  m_AnchoredPosition: {x: 1, y: -1.5}
-  m_SizeDelta: {x: -1, y: 1}
+  m_AnchorMin: {x: .00875304639, y: .679304183}
+  m_AnchorMax: {x: .161000013, y: .738699496}
+  m_AnchoredPosition: {x: 1, y: .5}
+  m_SizeDelta: {x: -29, y: -1}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &987159222
 MonoBehaviour:
@@ -871,6 +871,7 @@ MonoBehaviour:
   NumberOfPlayer: 1
   BasePlayerLife: 3
   LastLevelWin: 0
+  LevelCount: 0
   animationUI: {fileID: 0}
 --- !u!4 &2105654555
 Transform:
