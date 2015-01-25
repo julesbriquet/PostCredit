@@ -42,20 +42,12 @@ public class LobbyManager : MonoBehaviour
 		bool stillLevel = GameManager.Instance.StillLevel();
 		bool nextDifficulty = GameManager.Instance.NextDifficulty();
 
-<<<<<<< HEAD
 		string nextLevel = string.Empty;
-
-		{
-			SetLobbyCounter();
-		}
-=======
-		string nextLevel = string.Empty;
-
+		SetLobbyCounter();
         if (win)
             winAudio.Play();
         else
             failAudio.Play();
->>>>>>> origin/master
 
 		//Set previous screenshot
 		{

@@ -422,13 +422,10 @@ MonoBehaviour:
   LastScreen: {fileID: 1109685378}
   NextScreen: {fileID: 256709698}
   LobbyResult: {fileID: 472605400}
-<<<<<<< HEAD
   LobbyCounter: {fileID: 736390769}
-=======
   winAudio: {fileID: 668342373}
   failAudio: {fileID: 668342372}
   gameOverAudio: {fileID: 668342374}
->>>>>>> origin/master
 --- !u!4 &668342371
 Transform:
   m_ObjectHideFlags: 0
