@@ -10,6 +10,7 @@ public class PlateformerCharacter : MonoBehaviour {
 	bool dead = false;
 	bool win = false;
 	public bool HasWin { get { return this.win; } }
+	bool collisionStay = false;
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +30,7 @@ public class PlateformerCharacter : MonoBehaviour {
 	{
 		if(!this.dead && !this.win)
 		{
-			if(!this.LockMove)
+			if(!this.LockMove && !this.collisionStay)
 			{
 				Vector2 velocity = this.rigidbody2D.velocity;
 				velocity.x = Input.GetAxis("Horizontal_P1") * PlateformerManager.Instance.GetMoveSpeed();
@@ -80,11 +81,27 @@ public class PlateformerCharacter : MonoBehaviour {
 	{
 		if(coll.collider.tag == "Plateform")
 		{
-			if(this.rigidbody2D.collider2D.bounds.min.y < coll.collider.collider2D.bounds.max.y)
+			if(this.rigidbody2D.collider2D.bounds.min.y < coll.collider.collider2D.bounds.max.y
+			   ||
+			   this.rigidbody2D.collider2D.bounds.max.x < coll.collider.collider2D.bounds.min.x)
 			{
-				this.rigidbody2D.AddForce(new Vector2(0f, PlateformerManager.Instance.GetGravity() * 3f));
+				this.collisionStay = true;
+				Vector2 velocity = this.rigidbody2D.velocity;
+				velocity.x = 0f;
+				this.rigidbody2D.velocity = velocity;
+
+				if(this.rigidbody2D.collider2D.bounds.min.y > coll.collider.collider2D.bounds.center.y)
+				{
+					this.rigidbody2D.AddForce(new Vector2(0f, -2f * PlateformerManager.Instance.GetGravity()));
+				}
 			}
 		}
+	}
+
+	void OnCollisionExit2D(Collision2D coll)
+	{
+		if(coll.collider.tag == "Plateform")
+			this.collisionStay = false;
 	}
 
 	void DeadSkull ()
