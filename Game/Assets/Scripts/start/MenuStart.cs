@@ -30,6 +30,7 @@ public class MenuStart : MonoBehaviour {
 
 	public void PressStart()
 	{
+        GameManager.Instance.gameMusic.Play();
 		GameManager.Instance.StartGame();
 	}
 

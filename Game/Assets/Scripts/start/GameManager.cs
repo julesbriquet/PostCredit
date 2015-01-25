@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour {
 
     public TransitionAnimations animationUI;
 
+    public AudioSource gameMusic;
+
 	void Awake ()
 	{
 		if(null == GameManager.Instance)
