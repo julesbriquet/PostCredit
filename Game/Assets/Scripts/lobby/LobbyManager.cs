@@ -12,6 +12,8 @@ public class LobbyManager : MonoBehaviour
 	public Tv LastScreen;
 	public Tv NextScreen;
 
+	public Image LobbyResult;
+
 	public void Start ()
 	{
 		this.Hearts.SetUp(GameManager.Instance.ActivePlayer.Life);
@@ -109,13 +111,16 @@ public class LobbyManager : MonoBehaviour
 			GameObject.Destroy(this.NextScreen.Todo);
 		}
 
+		this.LobbyResult.enabled = true;
 		if(win)
 		{
-			this.MainText.text = "You win";
+//			this.MainText.text = "You win";
+			this.LobbyResult.sprite = (Sprite) Resources.Load<Sprite>("txt_you_win");
 		}
 		else
 		{
-			this.MainText.text = "You lose";
+//			this.MainText.text = "You lose";
+			this.LobbyResult.sprite = (Sprite) Resources.Load<Sprite>("txt_you_lose");
 		}
 
 		yield return new WaitForSeconds(2f);
@@ -130,7 +135,8 @@ public class LobbyManager : MonoBehaviour
 
 		if(activePlayer.Life == 0)
 		{
-			this.MainText.text = "Game Over";
+//			this.MainText.text = "Game Over";
+			this.LobbyResult.sprite = (Sprite) Resources.Load<Sprite>("txt_game_over");
 
 			yield return new WaitForSeconds(1f);
 
@@ -142,11 +148,14 @@ public class LobbyManager : MonoBehaviour
 			{
 				if(nextDifficulty)
 				{
-					this.MainText.text = "Next difficulty";
+//					this.MainText.text = "Next difficulty";
+					this.LobbyResult.sprite = (Sprite) Resources.Load<Sprite>("txt_be_ready");
 					yield return new WaitForSeconds(1f);
 				}
 
-				this.MainText.text = "Be ready for the next level";
+//				this.MainText.text = "Be ready for the next level";
+				this.LobbyResult.sprite = (Sprite) Resources.Load<Sprite>("txt_be_ready");
+
 				this.Character.StartMove();
 				yield return new WaitForSeconds(2.6f);
 
@@ -154,7 +163,8 @@ public class LobbyManager : MonoBehaviour
 			}
 			else
 			{
-				this.MainText.text = "Congratulation!";
+//				this.MainText.text = "Congratulation!";
+				this.LobbyResult.sprite = (Sprite) Resources.Load<Sprite>("txt_congrats");
 				
 				yield return new WaitForSeconds(5f);
 				
