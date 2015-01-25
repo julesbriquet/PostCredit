@@ -98,14 +98,14 @@ public class LobbyManager : MonoBehaviour
 		int numberOfPlayerAlive = GameManager.Instance.NumberOfPlayerAlive();
 
 		this.MainText.text = string.Format("Player {0} {1}", GameManager.Instance.ActivePlayer.Id,
-		                                   GameManager.Instance.LastLevelWin?"Win":"Loose");
+		                                   GameManager.Instance.LastLevelWin?"Win":"Lose");
 		
 		yield return new WaitForSeconds(2f);
 
 		if(!win)
 		{
 			activePlayer.Life--;
-			this.MainText.text = string.Format("Player {0} loose 1 life", activePlayer.Id);
+			this.MainText.text = string.Format("Player {0} lose 1 life", activePlayer.Id);
 			yield return new WaitForSeconds(1f);
 		}
 	
