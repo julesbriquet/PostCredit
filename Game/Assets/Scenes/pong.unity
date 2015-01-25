@@ -473,6 +473,7 @@ GameObject:
   - 212: {fileID: 292091242}
   - 50: {fileID: 292091241}
   - 61: {fileID: 292091240}
+  - 114: {fileID: 292091244}
   m_Layer: 0
   m_Name: PongEnemi
   m_TagString: Untagged
@@ -540,6 +541,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &292091244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 292091239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7982bf4e53a3c0b48989721e021bb5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
 --- !u!1 &332190074
 GameObject:
   m_ObjectHideFlags: 0
